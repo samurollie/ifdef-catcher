@@ -349,3 +349,4 @@ dmypy.json
 .prof
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij,eclipse,java,maven,python
+/ifdef-detector.iml
