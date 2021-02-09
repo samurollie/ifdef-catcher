@@ -9,6 +9,7 @@ import lombok.Getter;
 @Getter @AllArgsConstructor
 public class PrepBlock {
     private final String filePath;
+    private final String commit;
     private final String head;
     private final String body;
     private final int line;
