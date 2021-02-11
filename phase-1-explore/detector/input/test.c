@@ -10,4 +10,12 @@ void main() {
     print("Value of Number is non-zero");
     #endif
     getch();
+
+    #ifdef <ProductName>
+     //do things here
+    #ifdef SUPPORT_MULTI_DNS_SERVER
+     //do things here
+    #endif
+     //do things here
+    #endif
 }

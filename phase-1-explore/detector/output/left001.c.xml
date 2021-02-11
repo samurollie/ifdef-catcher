@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" xmlns:cpp="http://www.srcML.org/srcML/cpp" xmlns:pos="http://www.srcML.org/srcML/position" revision="1.0.0" language="C" filename="/home/blacksamu/Documents/git/ifdef-catcher/phase-1-explore/detector/input/left001.c" pos:tabs="8"><cpp:include pos:start="1:1" pos:end="1:18">#<cpp:directive pos:start="1:2" pos:end="1:8">include</cpp:directive> <cpp:file pos:start="1:10" pos:end="1:18">&lt;stdio.h&gt;</cpp:file></cpp:include>
+<cpp:include pos:start="2:1" pos:end="2:18">#<cpp:directive pos:start="2:2" pos:end="2:8">include</cpp:directive> <cpp:file pos:start="2:10" pos:end="2:18">&lt;conio.h&gt;</cpp:file></cpp:include>
+
+<cpp:define pos:start="4:1" pos:end="4:16">#<cpp:directive pos:start="4:2" pos:end="4:7">define</cpp:directive> <cpp:macro pos:start="4:9" pos:end="4:14"><name pos:start="4:9" pos:end="4:14">NUMBER</name></cpp:macro> <cpp:value pos:start="4:16" pos:end="4:16">1</cpp:value></cpp:define>
+
+<function pos:start="6:1" pos:end="14:1"><type pos:start="6:1" pos:end="6:4"><name pos:start="6:1" pos:end="6:4">void</name></type> <name pos:start="6:6" pos:end="6:9">main</name><parameter_list pos:start="6:10" pos:end="6:11">()</parameter_list> <block pos:start="6:13" pos:end="14:1">{<block_content pos:start="7:5" pos:end="13:5">
+    <if_stmt pos:start="7:5" pos:end="13:5"><if pos:start="7:5" pos:end="13:5">if <condition pos:start="7:8" pos:end="11:5">(<expr pos:start="7:9" pos:end="11:0"><name pos:start="7:9" pos:end="9:0">condition_1</name>
+    <cpp:ifdef pos:start="8:5" pos:end="8:23">#<cpp:directive pos:start="8:6" pos:end="8:10">ifdef</cpp:directive> <name pos:start="8:12" pos:end="8:23">expression_1</name></cpp:ifdef>
+        <operator pos:start="9:9" pos:end="9:10">&amp;&amp;</operator> <name pos:start="9:12" pos:end="11:0">condition_2</name></expr>
+    <cpp:endif pos:start="10:5" pos:end="10:10">#<cpp:directive pos:start="10:6" pos:end="10:10">endif</cpp:directive></cpp:endif>
+    )</condition><block pos:start="11:6" pos:end="13:5">{<block_content>
+    <comment type="line" pos:start="12:5" pos:end="12:22">// Lines of code..</comment>
+    </block_content>}</block></if></if_stmt>
+</block_content>}</block></function></unit>
