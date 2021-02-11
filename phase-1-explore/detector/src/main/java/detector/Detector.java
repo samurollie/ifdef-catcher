@@ -1,11 +1,8 @@
 package detector;
 
 import detector.util.PairFile;
-import org.apache.commons.io.Charsets;
-import org.apache.commons.io.IOUtils;
 
 import java.io.File;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
