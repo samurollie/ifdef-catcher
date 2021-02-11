@@ -13,4 +13,11 @@ public class PrepBlock {
     private final String head;
     private final String body;
     private final int line;
+
+    public String toString() {
+        return "file: " + filePath + System.lineSeparator()
+                + "line: " + line + System.lineSeparator()
+                + "vvvvvvvvvvvvvvvvvvv" + System.lineSeparator()
+                + head + System.lineSeparator() + body + "#endif";
+    }
 }
