@@ -1,6 +1,8 @@
 package detector;
 
 import detector.util.PairFile;
+import detector.util.PrepFinder;
+import detector.util.SrcMLRunner;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -43,9 +45,9 @@ public class Detector {
     }
 
     private List<PrepBlock> getPrepBlockList(File file) {
-        // TODO implement
-        // run srcml on file
-        throw new UnsupportedOperationException("not implemented yet");
+        File xmlFile = SrcMLRunner.go(file);
+        if (xmlFile == null) return new ArrayList<>();
+        return PrepFinder.getBlocks(xmlFile, null);
     }
 
     private List<PairFile> getPairFiles() {
