@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" xmlns:cpp="http://www.srcML.org/srcML/cpp" revision="1.0.0" language="C" filename="/home/blacksamu/Documents/temp/cppstats/fake-proj/_cppstats_discipline/execute_cmd.c"><function><type><name>int</name></type>
+<name>executing_line_number</name> <parameter_list>()</parameter_list>
+<block>{<block_content>
+<if_stmt><if>if <condition>(<expr><name>executing</name> <operator>&amp;&amp;</operator> <name>showing_function_line</name> <operator>==</operator> <literal type="number">0</literal> <operator>&amp;&amp;</operator>
+<operator>(</operator><name>variable_context</name> <operator>==</operator> <literal type="number">0</literal> <operator>||</operator> <name>interactive_shell</name> <operator>==</operator> <literal type="number">0</literal><operator>)</operator> <operator>&amp;&amp;</operator>
+<name>currently_executing_command</name></expr>)</condition>
+<block>{<block_content>
+<cpp:if>#<cpp:directive>if</cpp:directive> <expr><call><name>defined</name> <argument_list>(<argument><expr><name>COND_COMMAND</name></expr></argument>)</argument_list></call></expr></cpp:if>
+<if_stmt><if>if <condition>(<expr><name><name>currently_executing_command</name><operator>-&gt;</operator><name>type</name></name> <operator>==</operator> <name>cm_cond</name></expr>)</condition><block type="pseudo"><block_content>
+<return>return <expr><name><name>currently_executing_command</name><operator>-&gt;</operator><name>value</name><operator>.</operator><name>Cond</name><operator>-&gt;</operator><name>line</name></name></expr>;</return></block_content></block></if>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+<cpp:if>#<cpp:directive>if</cpp:directive> <expr><call><name>defined</name> <argument_list>(<argument><expr><name>DPAREN_ARITHMETIC</name></expr></argument>)</argument_list></call></expr></cpp:if>
+<if type="elseif">else if <condition>(<expr><name><name>currently_executing_command</name><operator>-&gt;</operator><name>type</name></name> <operator>==</operator> <name>cm_arith</name></expr>)</condition><block type="pseudo"><block_content>
+<return>return <expr><name><name>currently_executing_command</name><operator>-&gt;</operator><name>value</name><operator>.</operator><name>Arith</name><operator>-&gt;</operator><name>line</name></name></expr>;</return></block_content></block></if>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+<cpp:if>#<cpp:directive>if</cpp:directive> <expr><call><name>defined</name> <argument_list>(<argument><expr><name>ARITH_FOR_COMMAND</name></expr></argument>)</argument_list></call></expr></cpp:if>
+<if type="elseif">else if <condition>(<expr><name><name>currently_executing_command</name><operator>-&gt;</operator><name>type</name></name> <operator>==</operator> <name>cm_arith_for</name></expr>)</condition><block type="pseudo"><block_content>
+<return>return <expr><name><name>currently_executing_command</name><operator>-&gt;</operator><name>value</name><operator>.</operator><name>ArithFor</name><operator>-&gt;</operator><name>line</name></name></expr>;</return></block_content></block></if></if_stmt>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+<return>return <expr><name>line_number</name></expr>;</return>
+</block_content>}</block></if>
+<else>else<block type="pseudo"><block_content>
+<return>return <expr><name>line_number</name></expr>;</return></block_content></block></else></if_stmt>
+</block_content>}</block></function>
+</unit>

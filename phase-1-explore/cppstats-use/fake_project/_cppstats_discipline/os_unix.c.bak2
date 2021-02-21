@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void mch_setmouse(on) int on;
+{
+    
+    if (xterm_mouse_vers > 0)
+    {
+	
+    }
+
+# ifdef FEAT_MOUSE_DEC
+    else if (ttym_flags == TTYM_DEC)
+    {
+	
+    }
+# endif
+
+# ifdef FEAT_MOUSE_GPM
+    else
+    {
+	
+    }
+# endif
+
+# ifdef FEAT_MOUSE_JSB
+    else
+    {
+	
+    }
+# endif
+# ifdef FEAT_MOUSE_PTERM
+    else
+    {
+	
+    }
+# endif
+}

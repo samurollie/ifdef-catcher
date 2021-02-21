@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main(){
+
+mfp->mf_fd = open((char *)fname, new ? (O_CREAT | O_RDWR | O_TRUNC) : (O_RDONLY)
+
+#ifdef AMIGA
+);
+#endif
+#ifdef UNIX
+#ifdef SCO
+, (mode_t)0600);
+#else
+, 0600);
+#endif
+#endif
+#ifdef MSDOS
+, S_IREAD | S_IWRITE);
+#endif
+
+}

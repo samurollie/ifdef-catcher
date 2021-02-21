@@ -1,0 +1,26 @@
+void mch_setmouse(on) int on;
+{
+if (xterm_mouse_vers > 0)
+{
+}
+#if defined(FEAT_MOUSE_DEC)
+else if (ttym_flags == TTYM_DEC)
+{
+}
+#endif
+#if defined(FEAT_MOUSE_GPM)
+else
+{
+}
+#endif
+#if defined(FEAT_MOUSE_JSB)
+else
+{
+}
+#endif
+#if defined(FEAT_MOUSE_PTERM)
+else
+{
+}
+#endif
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" xmlns:cpp="http://www.srcML.org/srcML/cpp" revision="1.0.0" language="C" filename="/home/blacksamu/Documents/temp/cppstats/fake-proj/_cppstats_discipline/memfile.c"><function><type><name>int</name></type> <name>main</name><parameter_list>()</parameter_list><block>{<block_content>
+<expr_stmt><expr><name><name>mfp</name><operator>-&gt;</operator><name>mf_fd</name></name> <operator>=</operator> <call><name>open</name><argument_list>(<argument><expr><operator>(</operator><name>char</name> <operator>*</operator><operator>)</operator><name>fname</name></expr></argument>, <argument><expr><ternary><condition><expr><name>new</name></expr> ?</condition><then> <expr><operator>(</operator><name>O_CREAT</name> <operator>|</operator> <name>O_RDWR</name> <operator>|</operator> <name>O_TRUNC</name><operator>)</operator></expr> </then><else>: <expr><operator>(</operator><name>O_RDONLY</name><operator>)</operator></expr></else></ternary></expr></argument>
+<cpp:if>#<cpp:directive>if</cpp:directive> <expr><call><name>defined</name><argument_list>(<argument><expr><name>AMIGA</name></expr></argument>)</argument_list></call></expr></cpp:if>
+)</argument_list></call></expr>;</expr_stmt>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+<cpp:if>#<cpp:directive>if</cpp:directive> <expr><call><name>defined</name><argument_list>(<argument><expr><name>UNIX</name></expr></argument>)</argument_list></call></expr></cpp:if>
+<cpp:if>#<cpp:directive>if</cpp:directive> <expr><call><name>defined</name><argument_list>(<argument><expr><name>SCO</name></expr></argument>)</argument_list></call></expr></cpp:if>
+<operator>,</operator> <expr_stmt><expr><operator>(</operator><name>mode_t</name><operator>)</operator><literal type="number">0600</literal></expr></expr_stmt>)</block_content></block>;</function>
+<cpp:else>#<cpp:directive>else</cpp:directive></cpp:else>
+<operator>,</operator> <expr_stmt><expr><literal type="number">0600</literal></expr></expr_stmt>)<empty_stmt>;</empty_stmt>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+<cpp:if>#<cpp:directive>if</cpp:directive> <expr><call><name>defined</name><argument_list>(<argument><expr><name>MSDOS</name></expr></argument>)</argument_list></call></expr></cpp:if>
+<operator>,</operator> <expr_stmt><expr><name>S_IREAD</name> <operator>|</operator> <name>S_IWRITE</name></expr></expr_stmt>)<empty_stmt>;</empty_stmt>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+}
+</unit>

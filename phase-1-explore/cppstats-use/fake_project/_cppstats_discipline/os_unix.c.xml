@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" xmlns:cpp="http://www.srcML.org/srcML/cpp" revision="1.0.0" language="C" filename="/home/blacksamu/Documents/temp/cppstats/fake-proj/_cppstats_discipline/os_unix.c"><function><type><name>void</name></type> <name>mch_setmouse</name><parameter_list>(<parameter><decl><type><name>on</name></type></decl></parameter>)</parameter_list> <decl_stmt><decl><type><name>int</name></type> <name>on</name></decl>;</decl_stmt>
+<block>{<block_content>
+<if_stmt><if>if <condition>(<expr><name>xterm_mouse_vers</name> <operator>&gt;</operator> <literal type="number">0</literal></expr>)</condition>
+<block>{<block_content>
+</block_content>}</block></if>
+<cpp:if>#<cpp:directive>if</cpp:directive> <expr><call><name>defined</name><argument_list>(<argument><expr><name>FEAT_MOUSE_DEC</name></expr></argument>)</argument_list></call></expr></cpp:if>
+<if type="elseif">else if <condition>(<expr><name>ttym_flags</name> <operator>==</operator> <name>TTYM_DEC</name></expr>)</condition>
+<block>{<block_content>
+</block_content>}</block></if>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+<cpp:if>#<cpp:directive>if</cpp:directive> <expr><call><name>defined</name><argument_list>(<argument><expr><name>FEAT_MOUSE_GPM</name></expr></argument>)</argument_list></call></expr></cpp:if>
+<else>else
+<block>{<block_content>
+</block_content>}</block></else>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+<cpp:if>#<cpp:directive>if</cpp:directive> <expr><call><name>defined</name><argument_list>(<argument><expr><name>FEAT_MOUSE_JSB</name></expr></argument>)</argument_list></call></expr></cpp:if>
+<else>else
+<block>{<block_content>
+</block_content>}</block></else>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+<cpp:if>#<cpp:directive>if</cpp:directive> <expr><call><name>defined</name><argument_list>(<argument><expr><name>FEAT_MOUSE_PTERM</name></expr></argument>)</argument_list></call></expr></cpp:if>
+<else>else
+<block>{<block_content>
+</block_content>}</block></else></if_stmt>
+<cpp:endif>#<cpp:directive>endif</cpp:directive></cpp:endif>
+</block_content>}</block></function>
+</unit>
