@@ -39,7 +39,7 @@ def get_csv_files():
     csv_dir = 'csv_files'
     return glob.glob(join(csv_dir, '*.csv'))
 
-with open('result.csv', 'w') as f:
+with open('_result.csv', 'w') as f:
     f.write(get_header_line() + '\n')
     
     for csv_file in get_csv_files():
