@@ -1,1 +1,7 @@
 projectname,diff_loc,diff_blocks,diff_disciplined
+apache,62602,221,1.42
+berkeley.db,76246,773,0.29
+cherokee,7878,54,1.08
+clamav,171663,1128,5.29
+dia,6294,50,-0.83
+emacs,34829,2279,-1.81
