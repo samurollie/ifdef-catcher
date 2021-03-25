@@ -28,3 +28,5 @@ Project | Old version | Link old version | New version | Link new version
 [Clamav](https://www.clamav.net/) | 0.94.2 | [github](https://github.com/Cisco-Talos/clamav-devel/tree/clamav-0.94.2) | 0.104 | [github](https://github.com/Cisco-Talos/clamav-devel/tree/dev/0.104)
 [Dia](https://wiki.gnome.org/action/show/Apps/Dia?action=show&redirect=Dia) | 0.96.1 | [github](https://github.com/GNOME/dia/tree/DIA_0_96_1) | 0.97.2 | [github](https://github.com/GNOME/dia/tree/DIA_0_97_2)
 [Emacs](www.gnu.org/software/emacs/) | 22.3 | [github](https://github.com/emacs-mirror/emacs/tree/emacs-22.3) | 27.1.91 | [github](https://github.com/emacs-mirror/emacs/tree/emacs-27.1.91)
+[freebsd](https://www.freebsd.org) | 7.1 | [github](https://github.com/freebsd/freebsd-src/tree/release/7.1.0) | 12.2 | [github](https://github.com/freebsd/freebsd-src/tree/release/12.2.0)
+[gcc](https://gcc.gnu.org/) | 4.3.3 | [github](https://github.com/gcc-mirror/gcc/tree/releases/gcc-4.3.3) | 10.2.0 | [github](https://github.com/gcc-mirror/gcc/tree/releases/gcc-10.2.0)
