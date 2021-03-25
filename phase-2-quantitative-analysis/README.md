@@ -12,9 +12,7 @@ srcML       | 1.0.0   | https://www.srcml.org/#download or https://github.com/sr
 
 ## How to
 
-All files of each project need to be added to "source" folder, inside of the project. Exceptions:
-
-- Berkeley DB: version 18.1. In this version, there exists a src folder. Just rename this folder to "source", and erase other files and folders.
+All files of each project need to be added to "source" folder, inside of the project.
 
 ## Results.csv file
 
