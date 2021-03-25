@@ -30,3 +30,4 @@ Project | Old version | Link old version | New version | Link new version
 [Emacs](www.gnu.org/software/emacs/) | 22.3 | [github](https://github.com/emacs-mirror/emacs/tree/emacs-22.3) | 27.1.91 | [github](https://github.com/emacs-mirror/emacs/tree/emacs-27.1.91)
 [freebsd](https://www.freebsd.org) | 7.1 | [github](https://github.com/freebsd/freebsd-src/tree/release/7.1.0) | 12.2 | [github](https://github.com/freebsd/freebsd-src/tree/release/12.2.0)
 [gcc](https://gcc.gnu.org/) | 4.3.3 | [github](https://github.com/gcc-mirror/gcc/tree/releases/gcc-4.3.3) | 10.2.0 | [github](https://github.com/gcc-mirror/gcc/tree/releases/gcc-10.2.0)
+[ghostscript](https://www.ghostscript.com/) | 8.62.0 | []() | | []()
