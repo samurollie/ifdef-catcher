@@ -37,10 +37,10 @@ def get_header_line():
 
 def get_csv_files():
     csv_dir = 'csv_files'
-    return glob.glob(join(csv_dir, '*.csv'))
+    return sorted(glob.glob(join(csv_dir, '*.csv')))
 
 with open('_result.csv', 'w') as f:
     f.write(get_header_line() + '\n')
     
     for csv_file in get_csv_files():
-        f.write(get_output_line(csv_file))
+        f.write(get_output_line(csv_file) + '\n')
