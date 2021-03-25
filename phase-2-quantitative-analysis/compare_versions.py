@@ -14,7 +14,7 @@ with open('result.csv', 'r') as f:
             projects[projectname].append(line)
 
 with open('compare.csv', 'w') as f:
-    f.write('projectname,diff_loc,diff_blocks,diff_disciplined\n')
+    f.write('projectname,diff loc,diff blocks,diff % disciplined,diff disciplined\n')
     for project in projects:
         if len(projects[project]) < 2:
             continue
@@ -28,6 +28,7 @@ with open('compare.csv', 'w') as f:
         diff_loc = int(second[3]) - int(first[3])
         diff_blocks = int(second[4]) - int(first[4])
         diff_disciplined = float(second[5]) - float(first[5])
+        diff_n_disciplined = int(second[-1]) - int(first[-1])
 
         f.write(project + ',' + str(diff_loc) + ',' + str(diff_blocks) + ',' + \
-            str(round(diff_disciplined,2)) + '\n')
+            str(round(diff_disciplined,2)) + ',' + str(diff_n_disciplined) + '\n')

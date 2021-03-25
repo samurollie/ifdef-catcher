@@ -28,12 +28,13 @@ def get_output_line(csv_file):
         line += str(round(100.0 * conditionalelif/overallblocks,2)) + ','
         line += str(round(100.0 * parameter/overallblocks,2)) + ','
         line += str(round(100.0 * expression/overallblocks,2)) + ','
-        line += str(round(100.0 * undisciplinedunknown/overallblocks,2))
+        line += str(round(100.0 * undisciplinedunknown/overallblocks,2)) + ','
+        line += str(int(disciplined_by_overallblocks * overallblocks))
 
     return line
 
 def get_header_line():
-    return 'projectname,version,domain,#LOC,#AA,%disciplined,%IF,%CA,%EI,%PA,%EX,%NC'
+    return 'projectname,version,domain,#LOC,#AA,%disciplined,%IF,%CA,%EI,%PA,%EX,%NC,total disciplined'
 
 def get_csv_files():
     csv_dir = 'csv_files'
