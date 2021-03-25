@@ -1,0 +1,2 @@
+projectname;loc;compilationunit;functiontype;siblings;wrapperif;conditionalcase;conditionalelif;parameter;expression;undisciplinedknown;undisciplinedunknown;disciplined/overallblocks;overallblocks
+freebsd-12.2.0;11482530;32387;16150;59519;0;1;0;244;487;732;8680;0.91987605135;117468
