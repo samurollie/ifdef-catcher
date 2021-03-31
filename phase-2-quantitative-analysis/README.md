@@ -38,4 +38,5 @@ Project | Old version | Link old version | New version | Link new version
 [irssi](https://irssi.org/) | 0.8.13 | [github](https://github.com/irssi/irssi/tree/0.8.13) | 1.2.2 | [github](https://github.com/irssi/irssi/tree/1.2.2)
 [libxml2](http://www.xmlsoft.org/) | 2.7.3 | [github](https://github.com/GNOME/libxml2/tree/LIBXML2.7.3) | 2.9.10 | [github](https://github.com/GNOME/libxml2/tree/v2.9.10)
 [lighttpd](https://www.lighttpd.net/) | 1.4.22 | [github](https://github.com/lighttpd/lighttpd1.4/tree/lighttpd-1.4.22) | 1.4.59 | [github](https://github.com/lighttpd/lighttpd1.4/tree/lighttpd-1.4.59)
+[linux](https://www.linux.org/) | 2.6.28.7 | [github](https://github.com/torvalds/linux/tree/v2.6.28-rc7) | 5.12.5 | [github](https://github.com/torvalds/linux/tree/v5.12-rc5)
 [lynx](https://lynx.invisible-island.net/) | 2.8.6 | [archive](https://ftp.isc.org/lynx/current/lynx2.8.6rel.5.tar.Z) | 2.8.8 | [archive](https://ftp.isc.org/lynx/current/lynx2.8.8dev.8.tar.Z)
