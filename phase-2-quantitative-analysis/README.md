@@ -40,3 +40,6 @@ Project | Old version | Link old version | New version | Link new version
 [lighttpd](https://www.lighttpd.net/) | 1.4.22 | [github](https://github.com/lighttpd/lighttpd1.4/tree/lighttpd-1.4.22) | 1.4.59 | [github](https://github.com/lighttpd/lighttpd1.4/tree/lighttpd-1.4.59)
 [linux](https://www.linux.org/) | 2.6.28.7 | [github](https://github.com/torvalds/linux/tree/v2.6.28-rc7) | 5.12.5 | [github](https://github.com/torvalds/linux/tree/v5.12-rc5)
 [lynx](https://lynx.invisible-island.net/) | 2.8.6 | [archive](https://ftp.isc.org/lynx/current/lynx2.8.6rel.5.tar.Z) | 2.8.8 | [archive](https://ftp.isc.org/lynx/current/lynx2.8.8dev.8.tar.Z)
+[openldap](https://www.openldap.org/) | 2.4.16 | [github](https://github.com/openldap/openldap/tree/OPENLDAP_REL_ENG_2_4_16) | 2.4.58 | [github](https://github.com/openldap/openldap/tree/OPENLDAP_REL_ENG_2_4_58)
+[openvpn](https://openvpn.net/) | 2.1-rc1 | [github](https://github.com/OpenVPN/openvpn/tree/v2.1_rc1) | 2.5.1 | [github](https://github.com/OpenVPN/openvpn/tree/v2.5.1)
+[parrot](http://parrot.org/) | 0.9.1 | [github](https://github.com/parrot-mirror/parrot/tree/RELEASE_0_9_1) | 2.9.1 | [github](https://github.com/parrot-mirror/parrot/tree/RELEASE_2_9_1)
