@@ -1,0 +1,2 @@
+projectname;loc;compilationunit;functiontype;siblings;wrapperif;conditionalcase;conditionalelif;parameter;expression;undisciplinedknown;undisciplinedunknown;disciplined/overallblocks;overallblocks
+php-8.0.4RC1;800710;2598;1735;5229;1;0;0;1;57;59;732;0.923597025017;10353
