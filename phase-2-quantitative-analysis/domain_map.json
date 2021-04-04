@@ -1,0 +1,86 @@
+{
+   "apache": {
+      "domain": "Web server"
+   },
+   "berkeley.db": {
+      "domain": "database system"
+   },
+   "cherokee": {
+      "domain": "Web server"
+   },
+   "clamav": {
+      "domain": "antivirus program"
+   },
+   "cpython": {
+      "domain": "program interpreter"
+   },
+   "dia": {
+      "domain": "diagramming software"
+   },
+   "emacs": {
+      "domain": "text editor"
+   },
+   "freebsd": {
+      "domain": "operating system"
+   },
+   "gcc": {
+      "domain": "compiler framework"
+   },
+   "ghostscript": {
+      "domain": "postscript interpreter"
+   },
+   "gimp": {
+      "domain": "graphics editor"
+   },
+   "glibc": {
+      "domain": "programming library"
+   },
+   "gnumeric": {
+      "domain": "spreadsheet application"
+   },
+   "gnuplot": {
+      "domain": "plotting tool"
+   },
+   "irssi": {
+      "domain": "IRC client"
+   },
+   "libxml2": {
+      "domain": "XML library"
+   },
+   "lighttpd": {
+      "domain": "Web server"
+   },
+   "linux": {
+      "domain": "operating system"
+   },
+   "lynx": {
+      "domain": "Web browser"
+   },
+   "openldap": {
+      "domain": "LDAP directory service"
+   },
+   "openvpn": {
+      "domain": "seftrity application"
+   },
+   "parrot": {
+      "domain": "virtual machine"
+   },
+   "php": {
+      "domain": "program interpreter"
+   },
+   "postgres": {
+      "domain": "database system"
+   },
+   "privoxy": {
+      "domain": "proxy server"
+   },
+   "sendmail": {
+      "domain": "mail transfer agent"
+   },
+   "sqlite": {
+      "domain": "database system"
+   },
+   "subversion": {
+      "domain": "revision control system"
+   }
+}
