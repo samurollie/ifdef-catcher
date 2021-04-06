@@ -52,8 +52,6 @@ Project | Old version | Link old version | New version | Link new version
 [subversion](https://subversion.apache.org/) | 1.5.1 | [github](https://github.com/apache/subversion/tree/1.5.1) | 1.14.1 | [github](https://github.com/apache/subversion/tree/1.14.1)
 [sylpheed](https://sylpheed.sraoss.jp/en/) | 2.6.0 | [github](https://github.com/jan0sch/sylpheed/tree/release-2_6_0) | 3.6.0 | [github](https://github.com/jan0sch/sylpheed/tree/release-3_6_0)
 [tcl](https://core.tcl-lang.org/tcl/wiki?name=Index) | 8.5.7 | [github](https://github.com/tcltk/tcl/tree/core-8-5-7) | 8.6.11 | [github](https://github.com/tcltk/tcl/tree/core-8-6-11)
-[vim](https://www.vim.org/) | 7.2 | [github](https://github.com/vim/vim/tree/v7.2) | 8.2.2725 | [github](https://github.com/vim/vim/tree/v8.2.2725)
 [xfig](https://www.xfig.org/) | 3.2.5 | [sourceforge](https://sourceforge.net/p/mcj/xfig/ci/3.2.5/tree/) | 3.2.8a | [sourceforge](https://sourceforge.net/p/mcj/xfig/ci/3.2.8a/tree/)
 [xine-lib](http://xinehq.de/) | 1.1.16 | [sourceforge](https://sourceforge.net/p/xine/xine-lib/ci/1.1.16.2/tree/) | 1.1.20.1 | [sourceforge](https://sourceforge.net/p/xine/xine-lib/ci/1.1.20.1/tree/)
-[xorg-server](https://www.x.org/wiki/) | 1.5.1 | [github](https://github.com/XQuartz/xorg-server/tree/xorg-server-1.5.1) | 1.20.10 | [github](https://github.com/XQuartz/xorg-server/tree/xorg-server-1.20.10)
 [xterm](https://invisible-island.net/xterm/) | 2.4.3 | [github](https://github.com/ThomasDickey/xterm-snapshots/tree/xterm-243) | 3.1.7c | [github](https://github.com/ThomasDickey/xterm-snapshots/tree/xterm317c)
