@@ -92,13 +92,13 @@
    "vim": {
       "domain": "text editor"
    },
-   "vector graphics editor": {
+   "xfig": {
       "domain": "vector graphics editor"
    },
-   "xine-lib": {
+   "xinelib": {
       "domain": "media library"
    },
-   "xorg-server": {
+   "xorg.server": {
       "domain": "X server"
    },
    "xterm": {
