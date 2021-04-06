@@ -82,5 +82,26 @@
    },
    "subversion": {
       "domain": "revision control system"
+   },
+   "sylpheed": {
+      "domain": "e-mail client"
+   },
+   "tcl": {
+      "domain": "program interpreter"
+   },
+   "vim": {
+      "domain": "text editor"
+   },
+   "vector graphics editor": {
+      "domain": "vector graphics editor"
+   },
+   "xine-lib": {
+      "domain": "media library"
+   },
+   "xorg-server": {
+      "domain": "X server"
+   },
+   "xterm": {
+      "domain": "terminal emulator"
    }
 }
