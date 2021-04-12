@@ -1,107 +1,247 @@
 {
    "apache": {
-      "domain": "Web server"
+      "domain": "Web server",
+      "previous-url": "https://github.com/apache/httpd/archive/refs/tags/2.2.11.zip",
+      "current-url": "https://github.com/apache/httpd/archive/refs/tags/2.4.46.zip",
+      "previous-version": "2.2.11",
+      "current-version": "2.4.46"
    },
    "berkeley.db": {
-      "domain": "database system"
+      "domain": "database system",
+      "previous-url": "https://mirror.aarnet.edu.au/pub/cherokee/0.99/0.99.11/cherokee-0.99.11.tar.gz",
+      "current-url": "https://github.com/cherokee/webserver/archive/refs/tags/v1.2.104.zip",
+      "previous-version": "0.99.11",
+      "current-version": "1.2.104"
    },
    "cherokee": {
-      "domain": "Web server"
+      "domain": "Web server",
+      "previous-url": "http://ftpmirror.your.org/pub/misc/Berkeley-DB/db-4.7.25.zip",
+      "current-url": "https://drive.google.com/uc?id=15alXiEpmmTxsc_TYpzVVfgLCsN8mh845",
+      "previous-version": "4.7.25",
+      "current-version": "18.1"
    },
    "clamav": {
-      "domain": "antivirus program"
+      "domain": "antivirus program",
+      "previous-url": "https://github.com/Cisco-Talos/clamav-devel/archive/refs/tags/clamav-0.94.2.zip",
+      "current-url": "https://github.com/Cisco-Talos/clamav-devel/archive/refs/heads/dev/0.104.zip",
+      "previous-version": "0.94.2",
+      "current-version": "0.104"
    },
    "cpython": {
-      "domain": "program interpreter"
+      "domain": "program interpreter",
+      "previous-url": "https://github.com/python/cpython/archive/refs/tags/v2.6.1.zip",
+      "current-url": "https://github.com/python/cpython/archive/refs/tags/v3.9.3.zip",
+      "previous-version": "2.6.1",
+      "current-version": "3.9.3"
    },
    "dia": {
-      "domain": "diagramming software"
+      "domain": "diagramming software",
+      "previous-url": "https://github.com/GNOME/dia/archive/refs/tags/DIA_0_96_1.zip",
+      "current-url": "https://github.com/GNOME/dia/archive/refs/tags/DIA_0_97_2.zip",
+      "previous-version": "0.96.1",
+      "current-version": "0.97.2"
    },
    "emacs": {
-      "domain": "text editor"
+      "domain": "text editor",
+      "previous-url": "https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-22.3.zip",
+      "current-url": "https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-27.1.91.zip",
+      "previous-version": "22.3",
+      "current-version": "27.1.91"
    },
    "freebsd": {
-      "domain": "operating system"
+      "domain": "operating system",
+      "previous-url": "https://github.com/freebsd/freebsd-src/archive/refs/tags/release/7.1.0.zip",
+      "current-url": "https://github.com/freebsd/freebsd-src/archive/refs/tags/release/12.2.0.zip",
+      "previous-version": "7.1",
+      "current-version": "12.2"
    },
    "gcc": {
-      "domain": "compiler framework"
+      "domain": "compiler framework",
+      "previous-url": "https://github.com/gcc-mirror/gcc/archive/refs/tags/releases/gcc-4.3.3.zip",
+      "current-url": "https://github.com/gcc-mirror/gcc/archive/refs/tags/releases/gcc-10.2.0.zip",
+      "previous-version": "4.3.3",
+      "current-version": "10.2.0"
    },
    "ghostscript": {
-      "domain": "postscript interpreter"
+      "domain": "postscript interpreter",
+      "previous-url": "https://github.com/ArtifexSoftware/ghostpdl/archive/refs/tags/ghostscript-8.62.zip",
+      "current-url": "https://github.com/ArtifexSoftware/ghostpdl/archive/refs/tags/ghostscript-9.52.zip",
+      "previous-version": "8.62.0",
+      "current-version": "9.52"
    },
    "gimp": {
-      "domain": "graphics editor"
+      "domain": "graphics editor",
+      "previous-url": "https://github.com/GNOME/gimp/archive/refs/tags/GIMP_2_6_4.zip",
+      "current-url": "https://github.com/GNOME/gimp/archive/refs/tags/GIMP_2_10_24.zip",
+      "previous-version": "2.6.4",
+      "current-version": "2.10.24"
    },
    "glibc": {
-      "domain": "programming library"
+      "domain": "programming library",
+      "previous-url": "https://github.com/bminor/glibc/archive/refs/tags/glibc-2.9.zip",
+      "current-url": "https://github.com/bminor/glibc/archive/refs/tags/glibc-2.33.zip",
+      "previous-version": "2.9",
+      "current-version": "2.33"
    },
    "gnumeric": {
-      "domain": "spreadsheet application"
+      "domain": "spreadsheet application",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "gnuplot": {
-      "domain": "plotting tool"
+      "domain": "plotting tool",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "irssi": {
-      "domain": "IRC client"
+      "domain": "IRC client",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "libxml2": {
-      "domain": "XML library"
+      "domain": "XML library",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "lighttpd": {
-      "domain": "Web server"
+      "domain": "Web server",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "linux": {
-      "domain": "operating system"
+      "domain": "operating system",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "lynx": {
-      "domain": "Web browser"
+      "domain": "Web browser",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "openldap": {
-      "domain": "LDAP directory service"
+      "domain": "LDAP directory service",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "openvpn": {
-      "domain": "seftrity application"
+      "domain": "seftrity application",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "parrot": {
-      "domain": "virtual machine"
+      "domain": "virtual machine",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "php": {
-      "domain": "program interpreter"
+      "domain": "program interpreter",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "postgres": {
-      "domain": "database system"
+      "domain": "database system",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "privoxy": {
-      "domain": "proxy server"
+      "domain": "proxy server",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "sendmail": {
-      "domain": "mail transfer agent"
+      "domain": "mail transfer agent",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "sqlite": {
-      "domain": "database system"
+      "domain": "database system",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "subversion": {
-      "domain": "revision control system"
+      "domain": "revision control system",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "sylpheed": {
-      "domain": "e-mail client"
+      "domain": "e-mail client",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "tcl": {
-      "domain": "program interpreter"
+      "domain": "program interpreter",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "vim": {
-      "domain": "text editor"
+      "domain": "text editor",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "xfig": {
-      "domain": "vector graphics editor"
+      "domain": "vector graphics editor",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "xinelib": {
-      "domain": "media library"
+      "domain": "media library",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "xorg.server": {
-      "domain": "X server"
+      "domain": "X server",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    },
    "xterm": {
-      "domain": "terminal emulator"
+      "domain": "terminal emulator",
+      "previous-url": "",
+      "current-url": "",
+      "previous-version": "",
+      "current-version": ""
    }
 }
