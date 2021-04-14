@@ -34,7 +34,7 @@ Project | Old version | Link old version | New version | Link new version
 [ghostscript](https://www.ghostscript.com/) | 8.62.0 | [github](https://github.com/ArtifexSoftware/ghostpdl/tree/ghostscript-8.62) | 9.52 | [github](https://github.com/ArtifexSoftware/ghostpdl/tree/ghostscript-9.52)
 [gimp](https://www.gimp.org/) | 2.6.4 | [github](https://github.com/GNOME/gimp/tree/GIMP_2_6_4) | 2.10.24 | [github](https://github.com/GNOME/gimp/tree/GIMP_2_10_24)
 [glibc](https://www.gnu.org/software/libc/) | 2.9 | [github](https://github.com/bminor/glibc/tree/glibc-2.9) | 2.33 | [github](https://github.com/bminor/glibc/tree/glibc-2.33)
-[gnumeric](http://www.gnumeric.org/) | 1.9.5 | [github](https://github.com/GNOME/gnumeric/tree/GNUMERIC_1_9_5) | 1.12.49 | [github](https://github.com/GNOME/gnumeric/tree/GNUMERIC_1_9_5)
+[gnumeric](http://www.gnumeric.org/) | 1.9.5 | [github](https://github.com/GNOME/gnumeric/tree/GNUMERIC_1_9_5) | 1.12.49 | [github](https://github.com/GNOME/gnumeric/tree/GNUMERIC_1_12_49)
 [gnuplot](http://www.gnuplot.info/) | 4.2.5 | [github](https://github.com/gnuplot/gnuplot/tree/4.2.5) | 5.4.1 | [github](https://github.com/gnuplot/gnuplot/tree/5.4.1)
 [irssi](https://irssi.org/) | 0.8.13 | [github](https://github.com/irssi/irssi/tree/0.8.13) | 1.2.2 | [github](https://github.com/irssi/irssi/tree/1.2.2)
 [libxml2](http://www.xmlsoft.org/) | 2.7.3 | [github](https://github.com/GNOME/libxml2/tree/LIBXML2.7.3) | 2.9.10 | [github](https://github.com/GNOME/libxml2/tree/v2.9.10)
