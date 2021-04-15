@@ -36,6 +36,30 @@ def download(url, destiny):
         # gdown
         pass # TODO implement
 
+def extract(files, output_dir):
+    # TODO implement
+    pass
+
+def write_path_to_cppstats(path):
+    # TODO implement
+    pass
+
+def run_preparation():
+    # TODO implement
+    pass
+
+def run_filter():
+    # TODO implement
+    pass
+
+def run_analysis():
+    # TODO implement
+    pass
+
+def get_results():
+    # TODO implement
+    pass
+
 def run(projects):
     projects_stack = list(projects.keys())
     
@@ -49,18 +73,32 @@ def run(projects):
         download(project[VERSION_0_URL_KEY], VERSION_0_SOURCE_DIR)
         download(project[VERSION_1_URL_KEY], VERSION_1_SOURCE_DIR)
 
+        files_version_0 = [f for f in os.listdir(VERSION_0_SOURCE_DIR) if os.path.isfile(os.path.join(VERSION_0_SOURCE_DIR, f))]
+        files_version_1 = [f for f in os.listdir(VERSION_1_SOURCE_DIR) if os.path.isfile(os.path.join(VERSION_1_SOURCE_DIR, f))]
+        extract(files_version_0, VERSION_0_SOURCE_DIR)
+        extract(files_version_1, VERSION_1_SOURCE_DIR)
 
+        write_path_to_cppstats(VERSION_0_FOLDER)
+        write_path_to_cppstats(VERSION_1_FOLDER)
 
+        # stage 1
+        run_preparation()
 
+        # stage 2
+        run_filter()
 
+        # stage 3
+        run_analysis()
+
+        # get results
+        get_results()
 
         # delete version 0 and 1 folders
         shutil.rmtree(VERSION_0_FOLDER)
         shutil.rmtree(VERSION_1_FOLDER)
 
+        # TODO remove later
         break
-
-
 
 # MAIN
 
