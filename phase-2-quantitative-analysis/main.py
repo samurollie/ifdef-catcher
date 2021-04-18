@@ -3,6 +3,8 @@ import os
 import shutil
 import wget
 import gdown
+import zipfile
+import tarfile
 
 from pathlib import Path
 
@@ -40,26 +42,27 @@ def download(url, destiny, google_drive_filename):
         # gdown
         gdown.download(url, output = os.path.join(destiny, google_drive_filename))
 
-def extract(files, output_dir):
+def extract(files, source_dir):
     for file in files:
         if 'zip' in file:
-            pass # TODO implement unzip zip
+            with zipfile.ZipFile(os.path.join(source_dir, file), 'r') as zip_ref:
+                zip_ref.extractall(source_dir)
         elif 'tar.gz' in file:
-            pass # TODO implement unzip tar.gz
+            with tarfile.open(os.path.join(source_dir,file), 'r:gz') as tar_ref:
+                tar_ref.extractall(source_dir)
         elif 'tar.Z' in file:
-            pass # TODO implement unzip tar.Z
+            os.system('tar -zxvf ' + os.path.join(source_dir,file) + ' -C ' + source_dir)
+        os.remove(os.path.join(source_dir, file))
 
 def run_preparation():
-    # TODO implement
-    pass
+    os.system("cd " + REPOS_FOLDER + " && cppstats.preparation --kind discipline && cd ..")
 
 def run_filter():
     # TODO implement
     pass
 
 def run_analysis():
-    # TODO implement
-    pass
+    os.system("cd " + REPOS_FOLDER + " && cppstats.analysis --kind discipline && cd ..")
 
 def get_results():
     # TODO implement
