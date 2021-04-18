@@ -79,8 +79,8 @@ def run(projects):
         Path(VERSION_0_SOURCE_DIR).mkdir(parents=True, exist_ok=True)
         Path(VERSION_1_SOURCE_DIR).mkdir(parents=True, exist_ok=True)
 
-        download(project[VERSION_0_URL_KEY], VERSION_0_SOURCE_DIR, project[GOOGLE_DRIVE_FILENAME_V0])
-        download(project[VERSION_1_URL_KEY], VERSION_1_SOURCE_DIR, project[GOOGLE_DRIVE_FILENAME_V1])
+        download(project[VERSION_0_URL_KEY], VERSION_0_SOURCE_DIR, project.get(GOOGLE_DRIVE_FILENAME_V0))
+        download(project[VERSION_1_URL_KEY], VERSION_1_SOURCE_DIR, project.get(GOOGLE_DRIVE_FILENAME_V1))
 
         files_version_0 = [f for f in os.listdir(VERSION_0_SOURCE_DIR) if os.path.isfile(os.path.join(VERSION_0_SOURCE_DIR, f))]
         files_version_1 = [f for f in os.listdir(VERSION_1_SOURCE_DIR) if os.path.isfile(os.path.join(VERSION_1_SOURCE_DIR, f))]
