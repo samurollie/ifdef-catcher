@@ -7,18 +7,19 @@
       "current-version": "2.4.46"
    },
    "berkeley.db": {
+      "domain": "Web server",
+      "previous-url": "http://ftpmirror.your.org/pub/misc/Berkeley-DB/db-4.7.25.zip",
+      "current-url": "https://drive.google.com/uc?id=17lUWTZRqDjtpHg8qXE0HCs477MKCCK1q",
+      "google-drive-filename-v1": "berkeley-db-18.1.40.zip",
+      "previous-version": "4.7.25",
+      "current-version": "18.1"
+   },
+   "cherokee": {
       "domain": "database system",
       "previous-url": "https://mirror.aarnet.edu.au/pub/cherokee/0.99/0.99.11/cherokee-0.99.11.tar.gz",
       "current-url": "https://github.com/cherokee/webserver/archive/refs/tags/v1.2.104.zip",
       "previous-version": "0.99.11",
       "current-version": "1.2.104"
-   },
-   "cherokee": {
-      "domain": "Web server",
-      "previous-url": "http://ftpmirror.your.org/pub/misc/Berkeley-DB/db-4.7.25.zip",
-      "current-url": "https://drive.google.com/uc?id=15alXiEpmmTxsc_TYpzVVfgLCsN8mh845",
-      "previous-version": "4.7.25",
-      "current-version": "18.1"
    },
    "clamav": {
       "domain": "antivirus program",
