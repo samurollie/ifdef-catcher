@@ -1,6 +1,8 @@
 import json
 import os
 import shutil
+import wget
+import gdown
 
 from pathlib import Path
 
@@ -12,6 +14,8 @@ VERSION_0_STRING_KEY = 'previous-version'
 VERSION_1_STRING_KEY = 'current-version'
 VERSION_0_URL_KEY = 'previous-url'
 VERSION_1_URL_KEY = 'current-url'
+GOOGLE_DRIVE_FILENAME_V0 = 'google-drive-filename-v0'
+GOOGLE_DRIVE_FILENAME_V1 = 'google-drive-filename-v1'
 DOMAIN_KEY = 'domain'
 
 DESTINATION_FOLDER = 'csv_files'
@@ -28,21 +32,22 @@ def get_projects(domain_map):
     with open(domain_map, 'r') as f:
         return json.load(f)
 
-def download(url, destiny):
+def download(url, destiny, google_drive_filename):
     if 'google' not in url:
         # wget
-        pass # TODO implement
+        wget.download(url, out=destiny)
     else:
         # gdown
-        pass # TODO implement
+        gdown.download(url, output = os.path.join(destiny, google_drive_filename))
 
 def extract(files, output_dir):
-    # TODO implement
-    pass
-
-def write_path_to_cppstats(path):
-    # TODO implement
-    pass
+    for file in files:
+        if 'zip' in file:
+            pass # TODO implement unzip zip
+        elif 'tar.gz' in file:
+            pass # TODO implement unzip tar.gz
+        elif 'tar.Z' in file:
+            pass # TODO implement unzip tar.Z
 
 def run_preparation():
     # TODO implement
@@ -61,6 +66,10 @@ def get_results():
     pass
 
 def run(projects):
+    with open(CPPSTATS_INPUT_TXT, 'w') as f:
+        f.write(VERSION_0_FOLDER + '\n')
+        f.write(VERSION_1_FOLDER + '\n')
+
     projects_stack = list(projects.keys())
     
     while len(projects_stack) != 0:
@@ -70,16 +79,13 @@ def run(projects):
         Path(VERSION_0_SOURCE_DIR).mkdir(parents=True, exist_ok=True)
         Path(VERSION_1_SOURCE_DIR).mkdir(parents=True, exist_ok=True)
 
-        download(project[VERSION_0_URL_KEY], VERSION_0_SOURCE_DIR)
-        download(project[VERSION_1_URL_KEY], VERSION_1_SOURCE_DIR)
+        download(project[VERSION_0_URL_KEY], VERSION_0_SOURCE_DIR, project[GOOGLE_DRIVE_FILENAME_V0])
+        download(project[VERSION_1_URL_KEY], VERSION_1_SOURCE_DIR, project[GOOGLE_DRIVE_FILENAME_V1])
 
         files_version_0 = [f for f in os.listdir(VERSION_0_SOURCE_DIR) if os.path.isfile(os.path.join(VERSION_0_SOURCE_DIR, f))]
         files_version_1 = [f for f in os.listdir(VERSION_1_SOURCE_DIR) if os.path.isfile(os.path.join(VERSION_1_SOURCE_DIR, f))]
         extract(files_version_0, VERSION_0_SOURCE_DIR)
         extract(files_version_1, VERSION_1_SOURCE_DIR)
-
-        write_path_to_cppstats(VERSION_0_FOLDER)
-        write_path_to_cppstats(VERSION_1_FOLDER)
 
         # stage 1
         run_preparation()
@@ -94,8 +100,9 @@ def run(projects):
         get_results()
 
         # delete version 0 and 1 folders
-        shutil.rmtree(VERSION_0_FOLDER)
-        shutil.rmtree(VERSION_1_FOLDER)
+        # TODO revert later
+        #shutil.rmtree(VERSION_0_FOLDER)
+        #shutil.rmtree(VERSION_1_FOLDER)
 
         # TODO remove later
         break
