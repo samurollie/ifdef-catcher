@@ -144,7 +144,7 @@
       "domain": "seftrity application",
       "previous-url": "https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.1_rc1.zip",
       "current-url": "https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.5.1.zip",
-      "previous-version": "2.1-rc1",
+      "previous-version": "2.1.rc1",
       "current-version": "2.5.1"
    },
    "parrot": {
@@ -159,13 +159,13 @@
       "previous-url": "https://github.com/php/php-src/archive/refs/tags/php-5.2.8.zip",
       "current-url": "https://github.com/php/php-src/archive/refs/tags/php-8.0.4RC1.zip",
       "previous-version": "5.2.8",
-      "current-version": "8.0.4-rc1"
+      "current-version": "8.0.4.rc1"
    },
    "postgres": {
       "domain": "database system",
       "previous-url": "https://github.com/postgres/postgres/archive/refs/tags/REL8_4_BETA2.zip",
       "current-url": "https://github.com/postgres/postgres/archive/refs/tags/REL_13_2.zip",
-      "previous-version": "8.4-beta2",
+      "previous-version": "8.4.beta2",
       "current-version": "13.2"
    },
    "privoxy": {
