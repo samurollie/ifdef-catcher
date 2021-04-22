@@ -1,7 +1,7 @@
 repos/version_0
 repos/version_1
 repos/cppstats_input.txt
-
+*.tmp
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,vscode,virtualenv
