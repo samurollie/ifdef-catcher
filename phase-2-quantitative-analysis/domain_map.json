@@ -212,15 +212,19 @@
    },
    "xfig": {
       "domain": "vector graphics editor",
-      "previous-url": "https://sourceforge.net/code-snapshots/git/m/mc/mcj/xfig.git/mcj-xfig-a75592a63d7cf112caa39d0fae7855e310b37a3f.zip",
-      "current-url": "https://sourceforge.net/code-snapshots/git/m/mc/mcj/xfig.git/mcj-xfig-050b5b2cb57915bf6e4a516cc8eae542c9858a1c.zip",
+      "previous-url": "https://drive.google.com/uc?id=1kVOvv3xcHxWeeAoDuacV3M5HloWui6Ty",
+      "current-url": "https://drive.google.com/uc?id=1wDhkbRFkVQS32mghD9IT5fvBplXsxpPx",
+      "google-drive-filename-v0": "xfig-3.2.5.zip",
+      "google-drive-filename-v1": "xfig-3.2.8a.zip",
       "previous-version": "3.2.5",
       "current-version": "3.2.8a"
    },
    "xinelib": {
       "domain": "media library",
-      "previous-url": "https://sourceforge.net/code-snapshots/hg/x/xi/xine/xine-lib/xine-xine-lib-ff19463729d8f9bbea35171d641c5f28cdacc7c8.zip",
-      "current-url": "https://sourceforge.net/code-snapshots/hg/x/xi/xine/xine-lib/xine-xine-lib-dde68fe11b973767f0b743ced2b41a244e1e0b78.zip",
+      "previous-url": "https://drive.google.com/uc?id=1JbuNi39VJXmJARc56wbzYwJwva_Owd7F",
+      "current-url": "https://drive.google.com/uc?id=1TV6ALNWEju_g7-JnN3yG2Dciv8CaLtTq",
+      "google-drive-filename-v0": "xine.lib-1.1.16.2.zip",
+      "google-drive-filename-v1": "xine.lib-1.1.20.1.zip",
       "previous-version": "1.1.16",
       "current-version": "1.1.20.1"
    },
