@@ -208,6 +208,7 @@ def run(projects):
         f.write(VERSION_1_FOLDER + '\n')
 
     projects_stack = list(projects.keys())
+    write_head_totals = True
     
     while len(projects_stack) != 0:
         project_name = projects_stack.pop()
@@ -233,6 +234,9 @@ def run(projects):
             # stage 2
             total_files, total_deleted = run_filter()
             with open(TOTALS_CSV, 'a+') as f:
+                if write_head_totals:
+                    f.write("project,total files,total removed\n")
+                    write_head_totals = False
                 f.write(project_name + "," + str(total_files) + "," + str(total_deleted) + "\n")
 
             # stage 3
