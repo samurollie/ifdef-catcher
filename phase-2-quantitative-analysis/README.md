@@ -55,3 +55,8 @@ Project | Old version | Link old version | New version | Link new version
 [xfig](https://www.xfig.org/) | 3.2.5 | [sourceforge](https://sourceforge.net/p/mcj/xfig/ci/3.2.5/tree/) | 3.2.8a | [sourceforge](https://sourceforge.net/p/mcj/xfig/ci/3.2.8a/tree/)
 [xine-lib](http://xinehq.de/) | 1.1.16 | [sourceforge](https://sourceforge.net/p/xine/xine-lib/ci/1.1.16.2/tree/) | 1.1.20.1 | [sourceforge](https://sourceforge.net/p/xine/xine-lib/ci/1.1.20.1/tree/)
 [xterm](https://invisible-island.net/xterm/) | 2.4.3 | [github](https://github.com/ThomasDickey/xterm-snapshots/tree/xterm-243) | 3.1.7c | [github](https://github.com/ThomasDickey/xterm-snapshots/tree/xterm317c)
+
+
+## Pipenv
+
+This project use pipenv lib. see https://pypi.org/project/pipenv/ for more details.
