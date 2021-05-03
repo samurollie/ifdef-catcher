@@ -60,3 +60,12 @@ Project | Old version | Link old version | New version | Link new version
 ## Pipenv
 
 This project use pipenv lib. see https://pypi.org/project/pipenv/ for more details.
+
+
+## Manual adjustments
+
+The projects below had a file reduction equal to zero before analysis. Therefore, a file matching adjustment was made to maintain file matching between the versions of each project.
+
+- xfig
+- openvpn
+- ghostscript
