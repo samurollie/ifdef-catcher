@@ -1,7 +1,7 @@
 project,total files,total removed
 xterm,59,46
 xinelib,1285,160
-xfig,470,0
+xfig,261,161
 tcl,434,118
 sylpheed,240,149
 subversion,740,116
@@ -11,7 +11,7 @@ privoxy,71,54
 postgres,2111,1143
 php,3302,716
 parrot,700,187
-openvpn,339,0
+openvpn,210,110
 openldap,1122,353
 lynx,203,142
 linux,65263,9059
@@ -22,7 +22,7 @@ gnuplot,219,134
 gnumeric,1018,428
 glibc,16733,3915
 gimp,3935,1789
-ghostscript,7334,0
+ghostscript,3493,823
 gcc,79968,2762
 freebsd,50525,8824
 emacs,1312,111
