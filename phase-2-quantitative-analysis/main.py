@@ -260,6 +260,28 @@ def run(projects):
         shutil.rmtree(VERSION_0_FOLDER)
         shutil.rmtree(VERSION_1_FOLDER)
 
+def get_total_v1_all_projects(projects):
+    with open(CPPSTATS_INPUT_TXT, 'w') as f:
+        f.write(VERSION_1_FOLDER + '\n')
+
+    projects_stack = list(projects.keys())
+    while len(projects_stack) != 0:
+        project_name = projects_stack.pop()
+        project = projects[project_name]
+
+        Path(VERSION_1_SOURCE_DIR).mkdir(parents=True, exist_ok=True)
+        download(project[VERSION_1_URL_KEY], VERSION_1_SOURCE_DIR, project.get(GOOGLE_DRIVE_FILENAME_V1))
+        files_version_1 = [f for f in os.listdir(VERSION_1_SOURCE_DIR) if os.path.isfile(os.path.join(VERSION_1_SOURCE_DIR, f))]
+        extract(files_version_1, VERSION_1_SOURCE_DIR)
+
+        total_files_v1 = 0
+
+        if run_preparation():
+            total_files_v1 = count_files_v1()
+            with open("totals_v1", 'a+') as f:
+                f.write(project_name + "," + str(total_files_v1) + "\n")
+        shutil.rmtree(VERSION_1_FOLDER)
+
 # MAIN
 
 if __name__ == "__main__":
