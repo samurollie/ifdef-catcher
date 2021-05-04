@@ -73,9 +73,19 @@ def extract(files, source_dir):
 def run_preparation():
     return 0 == os.system("cd " + REPOS_FOLDER + " && cppstats.preparation --kind discipline && cd ..")
 
+def count_files_v1():
+    total_files_v1 = 0
+    for filename_1 in glob.iglob(VERSION_1_CPPSTATS_DIR + '/**/**', recursive=True):
+        if not filename_1.endswith('.c') and not filename_1.endswith('.h'):
+            continue
+        total_files_v1 += 1
+    return total_files_v1
+
 def run_filter():
     total_files_v0 = 0
     total_deleted = 0
+    total_files_v1 = count_files_v1()
+
     for filename_0 in glob.iglob(VERSION_0_CPPSTATS_DIR + '/**/**', recursive=True):
         if not filename_0.endswith('.c') and not filename_0.endswith('.h'):
             continue
@@ -110,7 +120,7 @@ def run_filter():
                 except:
                     print('error')
     
-    return total_files_v0, total_deleted
+    return total_files_v0, total_files_v1, total_deleted
 
 def get_blocks(xml_path):
     doc = minidom.parse(xml_path)
@@ -227,17 +237,19 @@ def run(projects):
         extract(files_version_1, VERSION_1_SOURCE_DIR)
 
         total_files_v0 = 0
+        total_files_v1 = 0
         total_deleted = 0
 
         # stage 1
         if run_preparation():
             # stage 2
-            total_files_v0, total_deleted = run_filter()
+            total_files_v0, total_files_v1, total_deleted = run_filter()
             with open(TOTALS_CSV, 'a+') as f:
                 if write_head_totals:
-                    f.write("project,total files version 0,total removed\n")
+                    f.write("project,total files version 0,total files version 1,total removed\n")
                     write_head_totals = False
-                f.write(project_name + "," + str(total_files_v0) + "," + str(total_deleted) + "\n")
+                f.write(project_name + "," + str(total_files_v0) + "," + str(total_files_v1) + "," \
+                    + str(total_deleted) + "\n")
 
             # stage 3
             if run_analysis():
