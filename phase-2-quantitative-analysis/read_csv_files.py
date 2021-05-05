@@ -32,12 +32,12 @@ def get_output_line(csv_file):
             line += str(loc) + ','
             line += str(overallblocks) + ','
             line += str(round(disciplined_by_overallblocks * 100, 2)) + ','
-            line += str(round(100.0 * wrapperif/overallblocks, 2)) + ','
-            line += str(round(100.0 * conditionalcase/overallblocks, 2)) + ','
-            line += str(round(100.0 * conditionalelif/overallblocks,2)) + ','
-            line += str(round(100.0 * parameter/overallblocks,2)) + ','
-            line += str(round(100.0 * expression/overallblocks,2)) + ','
-            line += str(round(100.0 * undisciplinedunknown/overallblocks,2)) + ','
+            line += str(round(100.0 * (0 if overallblocks == 0 else wrapperif/overallblocks), 2)) + ','
+            line += str(round(100.0 * (0 if overallblocks == 0 else conditionalcase/overallblocks), 2)) + ','
+            line += str(round(100.0 * (0 if overallblocks == 0 else conditionalelif/overallblocks),2)) + ','
+            line += str(round(100.0 * (0 if overallblocks == 0 else parameter/overallblocks),2)) + ','
+            line += str(round(100.0 * (0 if overallblocks == 0 else expression/overallblocks),2)) + ','
+            line += str(round(100.0 * (0 if overallblocks == 0 else undisciplinedunknown/overallblocks),2)) + ','
             line += str(int(disciplined_by_overallblocks * overallblocks))
 
     return line
