@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 gdown = "==3.12.2"
 wget = "==3.2"
+jupyterlab = "*"
 
 [dev-packages]
 
