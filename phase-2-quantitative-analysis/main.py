@@ -7,6 +7,7 @@ import zipfile
 import tarfile
 import glob
 import re
+import sys
 
 from pathlib import Path
 from xml.dom import minidom
@@ -278,7 +279,7 @@ def get_total_v1_all_projects(projects):
 
         if run_preparation():
             total_files_v1 = count_files_v1()
-            with open("totals_v1", 'a+') as f:
+            with open(os.path.join(OUTPUT_FOLDER,"totals_v1"), 'a+') as f:
                 f.write(project_name + "," + str(total_files_v1) + "\n")
         shutil.rmtree(VERSION_1_FOLDER)
 
@@ -286,4 +287,7 @@ def get_total_v1_all_projects(projects):
 
 if __name__ == "__main__":
     projects = get_projects(DOMAIN_MAP)
-    run(projects)
+    if len(sys.argv) > 1 and sys.argv[1] == 'count_v1':
+        get_total_v1_all_projects(projects)
+    else:
+        run(projects)
