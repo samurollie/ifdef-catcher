@@ -69,3 +69,10 @@ The projects below had a file reduction equal to zero before analysis. Therefore
 - xfig
 - openvpn
 - ghostscript
+
+special cases:
+- lynx: version 0: all data equals to 0 (zero)
+- privoxy: version 0: all data equals to 0 (zero)
+- sendmail: version 0: all data equals to 0 (zero)
+- sylpheed: version 0: all data equals to 0 (zero)
+- xfig: version 0: all data equals to 0 (zero)
