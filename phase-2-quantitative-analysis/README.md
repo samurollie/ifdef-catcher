@@ -76,3 +76,5 @@ special cases:
 - sendmail: version 0: all data equals to 0 (zero)
 - sylpheed: version 0: all data equals to 0 (zero)
 - xfig: version 0: all data equals to 0 (zero)
+
+All of these projects have been removed.
