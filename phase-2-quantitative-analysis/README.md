@@ -78,3 +78,9 @@ special cases:
 - xfig: version 0: all data equals to 0 (zero)
 
 All of these projects have been removed.
+
+In addition to those above, the following projects have also been removed:
+
+- subversion: low number of pre processor blocks in version 0
+- xinelib: low number of pre processor blocks in both versions
+- irssi: low number of disciplined (absolute) changes from one version to another
