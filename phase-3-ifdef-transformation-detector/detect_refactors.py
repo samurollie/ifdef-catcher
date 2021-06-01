@@ -49,6 +49,7 @@ def clone_tag(base_url, tag, destiny):
 
 def main():
     write_file(CPPSTATS_INPUT_PATH, os.path.abspath(CPPSTATS_BASE))
+    create_report()
     projects = get_all_projects()
     
     while len(projects):
