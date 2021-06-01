@@ -1,6 +1,9 @@
 import os
 import shutil
+import glob
+
 from pathlib import Path
+from shutil import copyfile
 
 def create_empty_file(dir):
     file = os.path.join(dir, 'empty')
@@ -12,24 +15,27 @@ def clear_directory(dir):
     Path(dir).mkdir(parents=True, exist_ok=True)
 
 def list_source_files(dir):
-    # TODO implement list_source_files(dir)
-    pass
+    files = []
+    for extension in ('c', 'h'):
+        files.extend(glob.iglob(os.path.join(dir, '**', '*.' + extension), recursive=True))
+    return files
 
 def change_path(path, base_dir, destiny_dir):
-    # TODO implement change_path(path, base_dir, destiny_dir)
-    pass
+    if path.startswith(base_dir):
+        return destiny_dir + path[len(base_dir):]
+    return path
 
 def path_exists(path):
-    # TODO implement path_exists(path)
-    pass
+    return Path(path).exists()
 
 def equals(file1, file2):
-    # TODO implement equals(file1, file2)
-    pass
+    with open(file1, 'r') as f1, open(file2, 'r') as f2:
+        content1 = ''.join(''.join(f1.readlines()).split())
+        content2 = ''.join(''.join(f2.readlines()).split())
+        return content1 == content2
 
 def copy_file(file, destiny_dir):
-    # TODO implement copy_file(file, destiny_dir)
-    pass
+    copyfile(file, destiny_dir + file.split('/')[-1])
 
 def write_file(file, content):
     with open(file, 'w') as f:
