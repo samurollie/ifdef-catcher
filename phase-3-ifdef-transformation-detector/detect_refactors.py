@@ -69,20 +69,22 @@ def main():
             if not path_exists(curr_path) or equals(file, curr_path):
                 continue
             #   run cppstats on each file and get metrics
+            disc1, disc2, undisc1, undisc2 = None, None, None, None
+
             clear_cppstats_processing()
             copy_file(file, DIR_CPPSTATS_PROCESSING)
-            run_cppstats(PROCESSING_DIR)
-            disc1, undisc1 = get_results(CPPSTATS_RESULT_FILE)
+            if run_cppstats(PROCESSING_DIR):
+                disc1, undisc1 = get_results(CPPSTATS_RESULT_FILE)
 
             clear_cppstats_processing()
             copy_file(curr_path, DIR_CPPSTATS_PROCESSING)
-            run_cppstats(PROCESSING_DIR)
-            disc2, undisc2 = get_results(CPPSTATS_RESULT_FILE)
+            if run_cppstats(PROCESSING_DIR):
+                disc2, undisc2 = get_results(CPPSTATS_RESULT_FILE)
+
             # write report
-            write_report(project, file, curr_path, disc1, undisc1, disc2, undisc2)
-        
-        # TODO remove later
-        break
+            if disc1 != None and disc2 != None and undisc1 != None and undisc2 != None \
+                and (disc1 != disc2 or undisc1 != undisc2):
+                write_report(project, file, curr_path, disc1, undisc1, disc2, undisc2)
     
     clear_directories()
     clear_cppstats_processing()
