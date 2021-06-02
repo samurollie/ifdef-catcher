@@ -6,12 +6,21 @@ OUTPUT_DIR = 'output'
 REPORT_PATH = os.path.join(OUTPUT_DIR, 'report.csv')
 
 def run_cppstats(dir):
-    # TODO implement run_cppstats(dir)
-    pass
+    return 0 == os.system("cd " + dir + " && cppstats --kind discipline")
 
 def get_results(file):
-    # TODO implement get_results(file) -> disc, undisc
-    pass
+    disc, undisc = -1, -1
+    with open(file, 'r') as f:
+        titles = f.readline().split(';')
+        fields = f.readline().split(';')
+        _map = {}
+        for i,title in enumerate(titles):
+            _map[title.strip()] = fields[i].strip()
+        
+        disc = int(_map['compilationunit']) + int(_map['functiontype']) + int(_map['siblings'])
+        undisc = int(_map['overallblocks']) - disc
+
+    return disc, undisc
 
 def create_report():
     Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
