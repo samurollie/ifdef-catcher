@@ -6,19 +6,11 @@
       "previous-version": "2.2.11",
       "current-version": "2.4.46"
    },
-   "berkeley.db": {
-      "domain": "Web server",
-      "previous-url": "http://ftpmirror.your.org/pub/misc/Berkeley-DB/db-4.7.25.zip",
-      "current-url": "https://drive.google.com/uc?id=17lUWTZRqDjtpHg8qXE0HCs477MKCCK1q",
-      "google-drive-filename-v1": "berkeley-db-18.1.40.zip",
-      "previous-version": "4.7.25",
-      "current-version": "18.1"
-   },
    "cherokee": {
       "domain": "database system",
-      "previous-url": "https://mirror.aarnet.edu.au/pub/cherokee/0.99/0.99.11/cherokee-0.99.11.tar.gz",
+      "previous-url": "https://github.com/cherokee/webserver/archive/refs/tags/v1.0.12.zip",
       "current-url": "https://github.com/cherokee/webserver/archive/refs/tags/v1.2.104.zip",
-      "previous-version": "0.99.11",
+      "previous-version": "1.0.12",
       "current-version": "1.2.104"
    },
    "clamav": {
@@ -63,15 +55,6 @@
       "previous-version": "4.3.3",
       "current-version": "10.2.0"
    },
-   "ghostscript": {
-      "domain": "postscript interpreter",
-      "previous-url": "https://drive.google.com/uc?id=1J1TQce8o_fm_a7ekbs4ZfRHizRQU6MzZ",
-      "current-url": "https://drive.google.com/uc?id=1jOKsKD0T6WCbvAmYtZal0DhvV-OTrvxA",
-      "google-drive-filename-v0": "ghostpdl-ghostscript-8.62.zip",
-      "google-drive-filename-v1": "ghostpdl-ghostscript-9.52.zip",
-      "previous-version": "8.62.0",
-      "current-version": "9.52"
-   },
    "gimp": {
       "domain": "graphics editor",
       "previous-url": "https://github.com/GNOME/gimp/archive/refs/tags/GIMP_2_6_4.zip",
@@ -100,13 +83,6 @@
       "previous-version": "4.2.5",
       "current-version": "5.4.1"
    },
-   "irssi": {
-      "domain": "IRC client",
-      "previous-url": "https://github.com/irssi/irssi/archive/refs/tags/0.8.13.zip",
-      "current-url": "https://github.com/irssi/irssi/archive/refs/tags/1.2.2.zip",
-      "previous-version": "0.8.13",
-      "current-version": "1.2.2"
-   },
    "libxml2": {
       "domain": "XML library",
       "previous-url": "https://github.com/GNOME/libxml2/archive/refs/tags/LIBXML2.7.3.zip",
@@ -128,28 +104,12 @@
       "previous-version": "2.6.28.7",
       "current-version": "5.12.5"
    },
-   "lynx": {
-      "domain": "Web browser",
-      "previous-url": "https://ftp.isc.org/lynx/current/lynx2.8.6rel.5.tar.Z",
-      "current-url": "https://ftp.isc.org/lynx/current/lynx2.8.8dev.8.tar.Z",
-      "previous-version": "2.8.6",
-      "current-version": "2.8.8"
-   },
    "openldap": {
       "domain": "LDAP directory service",
       "previous-url": "https://github.com/openldap/openldap/archive/refs/tags/OPENLDAP_REL_ENG_2_4_16.zip",
       "current-url": "https://github.com/openldap/openldap/archive/refs/tags/OPENLDAP_REL_ENG_2_4_58.zip",
       "previous-version": "2.4.16",
       "current-version": "2.4.58"
-   },
-   "openvpn": {
-      "domain": "seftrity application",
-      "previous-url": "https://drive.google.com/uc?id=1vjAxNB8YU1qHZBCIQYyvjY6F-PFVeXd2",
-      "current-url": "https://drive.google.com/uc?id=1BiDB2EFec_1kF2mU3WwSoeUrLF1sIzAA",
-      "google-drive-filename-v0": "openvpn-2.1_rc1.zip",
-      "google-drive-filename-v1": "openvpn-2.5.1.zip",
-      "previous-version": "2.1.rc1",
-      "current-version": "2.5.1"
    },
    "parrot": {
       "domain": "virtual machine",
@@ -172,20 +132,6 @@
       "previous-version": "8.4.beta2",
       "current-version": "13.2"
    },
-   "privoxy": {
-      "domain": "proxy server",
-      "previous-url": "https://github.com/unisx/privoxy/archive/refs/tags/privoxy-3.0.12-stable.zip",
-      "current-url": "https://github.com/unisx/privoxy/archive/refs/tags/privoxy-3.0.24-stable.zip",
-      "previous-version": "3.0.12",
-      "current-version": "3.0.24"
-   },
-   "sendmail": {
-      "domain": "mail transfer agent",
-      "previous-url": "ftp://ftp.athena.pads.ufrj.br/pub/sendmail/sendmail.8.14.2.tar.gz",
-      "current-url": "ftp://ftp.sendmail.org/pub/sendmail/sendmail.8.16.1.tar.gz",
-      "previous-version": "8.14.2",
-      "current-version": "8.16.1"
-   },
    "sqlite": {
       "domain": "database system",
       "previous-url": "https://github.com/mackyle/sqlite/archive/refs/tags/version-3.6.10.zip",
@@ -193,44 +139,12 @@
       "previous-version": "3.6.10",
       "current-version": "3.35.4"
    },
-   "subversion": {
-      "domain": "revision control system",
-      "previous-url": "https://github.com/apache/subversion/archive/refs/tags/1.5.1.zip",
-      "current-url": "https://github.com/apache/subversion/archive/refs/tags/1.14.1.zip",
-      "previous-version": "1.5.1",
-      "current-version": "1.14.1"
-   },
-   "sylpheed": {
-      "domain": "e-mail client",
-      "previous-url": "https://github.com/jan0sch/sylpheed/archive/refs/tags/release-2_6_0.zip",
-      "current-url": "https://github.com/jan0sch/sylpheed/archive/refs/tags/release-3_6_0.zip",
-      "previous-version": "2.6.0",
-      "current-version": "3.6.0"
-   },
    "tcl": {
       "domain": "program interpreter",
       "previous-url": "https://github.com/tcltk/tcl/archive/refs/tags/core-8-5-7.zip",
       "current-url": "https://github.com/tcltk/tcl/archive/refs/tags/core-8-6-11.zip",
       "previous-version": "8.5.7",
       "current-version": "8.6.11"
-   },
-   "xfig": {
-      "domain": "vector graphics editor",
-      "previous-url": "https://drive.google.com/uc?id=1kVOvv3xcHxWeeAoDuacV3M5HloWui6Ty",
-      "current-url": "https://drive.google.com/uc?id=1wDhkbRFkVQS32mghD9IT5fvBplXsxpPx",
-      "google-drive-filename-v0": "xfig-3.2.5.zip",
-      "google-drive-filename-v1": "xfig-3.2.8a.zip",
-      "previous-version": "3.2.5",
-      "current-version": "3.2.8a"
-   },
-   "xinelib": {
-      "domain": "media library",
-      "previous-url": "https://drive.google.com/uc?id=1JbuNi39VJXmJARc56wbzYwJwva_Owd7F",
-      "current-url": "https://drive.google.com/uc?id=1TV6ALNWEju_g7-JnN3yG2Dciv8CaLtTq",
-      "google-drive-filename-v0": "xine.lib-1.1.16.2.zip",
-      "google-drive-filename-v1": "xine.lib-1.1.20.1.zip",
-      "previous-version": "1.1.16",
-      "current-version": "1.1.20.1"
    },
    "xterm": {
       "domain": "terminal emulator",
