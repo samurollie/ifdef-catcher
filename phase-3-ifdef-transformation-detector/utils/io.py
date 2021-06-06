@@ -19,7 +19,7 @@ def clear_directory(dir):
 
 def list_source_files(dir):
     files = []
-    for extension in ('c', 'h'):
+    for extension in ('c', 'h', 'C', 'H'):
         files.extend(glob.iglob(os.path.join(dir, '**', '*.' + extension), recursive=True))
     return files
 
