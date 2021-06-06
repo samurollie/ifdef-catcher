@@ -12,10 +12,11 @@ class Project:
         self.tag_prev = Project.__get_tag(prev)
         self.tag_curr = Project.__get_tag(curr)
     
-    def __get_tag(url):
-        return url[(url.rfind('/') + 1):url.rfind('.zip')]
+    def __get_tag(url) -> str:
+        tag = '/'.join(url.split('/')[8:])
+        return tag[:tag.rfind('.zip')]
 
-    def __get_base_url(url):
+    def __get_base_url(url) -> str:
         _index = url.index('github.com') + len('github.com')
         _index = url.index('/', _index) + 1
         _index = url.index('/', _index) + 1
@@ -28,7 +29,7 @@ class Project:
             return None
         return Project(name, dict_info)
 
-    def __is_valid(url):
+    def __is_valid(url) -> bool:
         if 'github' in url:
             return True
         return False

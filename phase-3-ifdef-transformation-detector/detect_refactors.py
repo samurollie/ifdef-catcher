@@ -66,7 +66,10 @@ def main():
             # compare each file of prev with curr
             curr_path = change_path(file, DIR_PROCESSING_PREV_VERSION, DIR_PROCESSING_CURR_VERSION)
             #   skip equals and if not have same path
-            if not path_exists(curr_path) or equals(file, curr_path):
+            try:
+                if not path_exists(curr_path) or equals(file, curr_path):
+                    continue
+            except:
                 continue
             #   run cppstats on each file and get metrics
             disc1, disc2, undisc1, undisc2 = None, None, None, None

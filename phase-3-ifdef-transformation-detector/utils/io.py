@@ -11,7 +11,10 @@ def create_empty_file(dir):
         os.utime(file, None)
 
 def clear_directory(dir):
-    shutil.rmtree(dir)
+    try:
+        shutil.rmtree(dir)
+    except:
+        pass
     Path(dir).mkdir(parents=True, exist_ok=True)
 
 def list_source_files(dir):
@@ -35,7 +38,7 @@ def equals(file1, file2):
         return content1 == content2
 
 def copy_file(file, destiny_dir):
-    copyfile(file, destiny_dir + file.split('/')[-1])
+    copyfile(file, os.path.join(destiny_dir,file.split('/')[-1]))
 
 def write_file(file, content):
     with open(file, 'w') as f:

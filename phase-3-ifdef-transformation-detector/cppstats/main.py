@@ -32,7 +32,7 @@ def create_report():
 def write_report(project, filepath_prev, filepath_curr, disc_prev, undisc_prev, \
     disc_curr, undisc_curr):
     with open(REPORT_PATH, 'a') as f:
-        f.write(project + ',')
+        f.write(project.name + ',')
         f.write(filepath_prev + ',')
         f.write(filepath_curr + ',')
         f.write(str(disc_prev) + ',')
