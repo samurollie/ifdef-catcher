@@ -1,0 +1,9 @@
+[
+  {
+    "name": "cherokee",
+    "url": "https://github.com/cherokee/webserver",
+    "withThreads": false,
+    "startCommit": "ab8ecd6351e4ea9cca11002ae1fb055143675f6f",
+    "endCommit": "51f13b9535e652421c128ef541371854637ac32e"
+  }
+]
