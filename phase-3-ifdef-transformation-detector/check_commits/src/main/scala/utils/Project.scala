@@ -18,6 +18,8 @@ class Project(
 object ProjectFilter {
   private val fileList: mutable.HashSet[String] = mutable.HashSet[String]()
 
+  def isEmpty: Boolean = fileList.isEmpty
+
   def contains(filename: String): Boolean = fileList.contains(filename)
 
   def buildFilter(projectName: String): Unit = {
