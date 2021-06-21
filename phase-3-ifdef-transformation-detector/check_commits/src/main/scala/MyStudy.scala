@@ -79,12 +79,17 @@ class MyStudy extends Study {
       fileWriter.close()
     }
 
+    val scmRepo = GitRemoteRepository.hostedOn(project.url)
+      .inTempDir("temp")
+      .buildAsSCMRepository()
+    val range = Commits.range(project.startCommit, project.endCommit)
+    val commits = range.get(scmRepo.getScm)
+
+    ProjectFilter.totalCommits = commits.size()
+    ProjectFilter.countCommits = 0
+
     var repositoryMining = new RepositoryMining()
-    repositoryMining = repositoryMining.in(
-      GitRemoteRepository.hostedOn(project.url)
-        .inTempDir("temp")
-        .buildAsSCMRepository()
-    )
+    repositoryMining = repositoryMining.in(scmRepo)
 
     if (project.withThreads) {
       repositoryMining = repositoryMining
@@ -94,7 +99,7 @@ class MyStudy extends Study {
     }
 
     repositoryMining
-      .through(Commits.range(project.startCommit, project.endCommit))
+      .through(range)
       .process(new MyVisitor(), new CSVFile(reportName, true))
       .mine()
 
