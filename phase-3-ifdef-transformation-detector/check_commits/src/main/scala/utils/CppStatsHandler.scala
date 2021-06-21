@@ -91,7 +91,7 @@ class CppStatsHandler(private val projectName:String, private val commitHash: St
   def clean(): Unit = {
     val execFolder = new File(executionFolder)
     if (execFolder.exists() && execFolder.isDirectory)
-      FileUtils.deleteDirectory(new File(executionFolder))
+      FileUtils.deleteDirectory(execFolder)
   }
 
   //<editor-fold desc="private methods">
