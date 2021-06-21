@@ -120,6 +120,10 @@ class MyVisitor extends CommitVisitor {
           writer)
       }
     } finally {
+      synchronized {
+        ProjectFilter.countCommits += 1
+        println("PROGRESS " + ProjectFilter.countCommits + "/" + ProjectFilter.totalCommits)
+      }
       repo.getScm.reset()
     }
   }
