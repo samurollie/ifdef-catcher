@@ -16,9 +16,14 @@ class Project(
              )
 
 object ProjectFilter {
+  private val TURN_ON = false
+
   private val fileList: mutable.HashSet[String] = mutable.HashSet[String]()
 
-  def isEmpty: Boolean = fileList.isEmpty
+  var totalCommits : Long = 0
+  var countCommits : Long = 0
+
+  def isEmpty: Boolean = !TURN_ON || fileList.isEmpty
 
   def contains(filename: String): Boolean = fileList.contains(filename)
 
