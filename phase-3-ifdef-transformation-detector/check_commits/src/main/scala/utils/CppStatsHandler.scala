@@ -1,9 +1,13 @@
 package ic.ufal.ifdefcatcher
 package utils
 
+import org.apache.commons.io.FileUtils
+
 import java.io.{File, FileWriter}
-import scala.util.Random
-import sys.process._
+import scala.collection.mutable
+import scala.io.Source
+import scala.sys.process._
+import scala.util.{Random, Try, Using}
 
 class CppStatsHandler(private val projectName:String, private val commitHash: String) {
 
@@ -12,7 +16,7 @@ class CppStatsHandler(private val projectName:String, private val commitHash: St
   private val CPPSTATS_ROOT_FOLDER = "CPPSTATS"
 
   private val executionFolder: String = CPPSTATS_ROOT_FOLDER + File.separator +
-    projectName.replaceAll("(\\W|^_)*", "_").replaceAll(" ", "") +
+    projectName.replaceAll("[^A-Za-z0-9]", "_").replaceAll(" ", "") +
     commitHash +
     Random.nextInt(Int.MaxValue)
 
@@ -27,7 +31,7 @@ class CppStatsHandler(private val projectName:String, private val commitHash: St
   private val cppstatsReport1 = project1 + File.separator + "cppstats_discipline.csv"
   private val cppstatsReport2 = project2 + File.separator + "cppstats_discipline.csv"
 
-  private val cppstatsCommand = "cppstats --kind discipline"
+  private val cppstatsCommand = "cppstats --list " + cppstatsFile + " --kind discipline"
 
   //</editor-fold>
 
@@ -40,11 +44,29 @@ class CppStatsHandler(private val projectName:String, private val commitHash: St
   }
 
   /**
+   * This replace the current file in the source folder
+   * @param file file to add in the source folder
+   * @return true if success
+   */
+  def addFileProject1(file: File): Boolean = {
+    copyFileToDestiny(file, new File(sourceFolder1 + File.separator + file.getName))
+  }
+
+  /**
+   * This replace the current file in the source folder
+   * @param file file to add in the source folder
+   * @return true if success
+   */
+  def addFileProject2(file: File): Boolean = {
+    copyFileToDestiny(file, new File(sourceFolder2 + File.separator + file.getName))
+  }
+
+  /**
    * Run cppstats
    * @return true if success
    */
   def runCppstats(): Boolean = {
-    0 == ("cd " + executionFolder + " && " + cppstatsCommand).!
+    0 == (cppstatsCommand).!
   }
 
   /**
@@ -67,14 +89,59 @@ class CppStatsHandler(private val projectName:String, private val commitHash: St
    * Delete all execution folder for this project, but no cppstats base folder.
    */
   def clean(): Unit = {
-    // TODO implement clean
+    val execFolder = new File(executionFolder)
+    if (execFolder.exists() && execFolder.isDirectory)
+      FileUtils.deleteDirectory(new File(executionFolder))
   }
 
   //<editor-fold desc="private methods">
 
+  private def copyFileToDestiny(file : File, destinyFile: File): Boolean = {
+    if (destinyFile.exists() && !destinyFile.delete) return false
+
+    try {
+      FileUtils.copyFile(file, destinyFile)
+    } catch {
+      case _: Exception => return false
+    }
+
+    true
+  }
+
   private def getMetrics(path: String) : Metrics = {
-    // TODO implement getMetrics
-    null
+    val report = new File(path)
+    if (!report.exists() || report.isDirectory) {
+      println("Error to get metrics")
+      return null
+    }
+
+    var titles = ""
+    var results = ""
+    val unit: Try[Unit] = Using(Source.fromFile(report)) {
+      source => {
+        val it = source.getLines()
+        var index = 0
+        while (it.hasNext) {
+          if (index == 0) titles = it.next else if (index == 1) results = it.next
+          index += 1
+        }
+      }
+    }
+    if (unit.isFailure) {
+      println("Error to get metrics")
+      return null
+    }
+
+    val titleColumns = titles.split(";")
+    val resultColumns = results.split(";")
+    val map = new mutable.HashMap[String, Long]
+    val validColumns = Array("loc", "compilationunit", "functiontype", "siblings", "overallblocks")
+    for ((value, index) <- titleColumns.zipWithIndex) {
+      if (validColumns.contains(value)) map.put(value, resultColumns.apply(index).toLong)
+    }
+
+    val disc = map.apply("compilationunit") + map.apply("functiontype") + map.apply("siblings")
+    new Metrics(disc, map.apply("overallblocks") - disc, map.apply("loc"), map.apply("overallblocks"))
   }
 
   private def createAllFolders(): Boolean = {

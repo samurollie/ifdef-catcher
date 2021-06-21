@@ -11,7 +11,7 @@ import org.repodriller.persistence.csv.CSVFile
 import org.repodriller.scm.GitRemoteRepository
 import org.repodriller.{RepositoryMining, Study}
 
-import java.io.File
+import java.io.{File, FileWriter}
 import scala.annotation.tailrec
 import scala.io.Source
 import scala.util.{Try, Using}
@@ -53,6 +53,32 @@ class MyStudy extends Study {
   private def mineRepo(project:Project): Unit = {
     delete_temp()
 
+    val reportName = "output" + File.separator + project.name + "_report.csv"
+    val fileWriter = new FileWriter(reportName)
+    try {
+      fileWriter.append(
+        "url," +
+        "old_path,"+
+        "new_path,"+
+        "old_loc,"+
+        "new_loc,"+
+        "old_block,"+
+        "new_block,"+
+        "old_disciplined,"+
+        "new_disciplined,"+
+        "old_undisciplined,"+
+        "new_undisciplined,"+
+        "commit_hash,"+
+        "author\n"
+      )
+    } catch {
+      case _: Exception =>
+        println("Error to write titles in the report file. skipping project " + project.name)
+        return
+    } finally {
+      fileWriter.close()
+    }
+
     var repositoryMining = new RepositoryMining()
     repositoryMining = repositoryMining.in(
       GitRemoteRepository.hostedOn(project.url)
@@ -69,7 +95,7 @@ class MyStudy extends Study {
 
     repositoryMining
       .through(Commits.range(project.startCommit, project.endCommit))
-      .process(new MyVisitor(), new CSVFile("output" + File.separator + project.name + "_report.csv"))
+      .process(new MyVisitor(), new CSVFile(reportName, true))
       .mine()
 
     delete_temp()
