@@ -16,7 +16,8 @@ class Project(
              )
 
 object ProjectFilter {
-  private val TURN_ON = false
+  var TURN_ON = false
+  var FILEPATH = ""
 
   private val fileList: mutable.HashSet[String] = mutable.HashSet[String]()
 
@@ -30,7 +31,7 @@ object ProjectFilter {
   def buildFilter(projectName: String): Unit = {
     if (fileList.nonEmpty) { fileList.clear() }
 
-    val unit: Try[Unit] = Using(Source.fromFile("filter.csv")) {
+    val unit: Try[Unit] = Using(Source.fromFile(FILEPATH)) {
       source => {
         val it = source.getLines()
 

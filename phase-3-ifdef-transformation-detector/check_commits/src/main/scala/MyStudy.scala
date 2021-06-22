@@ -1,6 +1,6 @@
 package ic.ufal.ifdefcatcher
 
-import utils.{Project, ProjectFilter}
+import utils.{ConfigurationFile, Project, ProjectFilter}
 
 import com.fasterxml.jackson.core.`type`.TypeReference
 import com.fasterxml.jackson.databind.json.JsonMapper
@@ -107,6 +107,10 @@ class MyStudy extends Study {
   }
 
   override def execute(): Unit = {
+    if (ConfigurationFile.getProperties) {
+      ProjectFilter.TURN_ON = ConfigurationFile.getFilterOn
+      ProjectFilter.FILEPATH = ConfigurationFile.getFilterPath
+    }
     executeNextProject(getProjects)
   }
 }
