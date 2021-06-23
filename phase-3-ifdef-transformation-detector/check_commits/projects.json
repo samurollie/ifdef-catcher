@@ -1,9 +1,51 @@
 [
   {
+    "name": "apache",
+    "url": "https://github.com/apache/httpd",
+    "withThreads": true,
+    "startCommit": "34ea1cee78449ff1081267cd2348a01099b04ac9",
+    "endCommit": "8064ccc50bffe86ad464246b9bfac7d78d7dbc1f"
+  },
+  {
     "name": "cherokee",
     "url": "https://github.com/cherokee/webserver",
     "withThreads": false,
     "startCommit": "96bbbd6bf660dfeb78df5b058140202b48db84ae",
     "endCommit": "1824487b7af0724ae42ef564b82b106c65fc0b31"
+  },
+  {
+    "name": "clamav",
+    "url": "https://github.com/Cisco-Talos/clamav-devel",
+    "withThreads": true,
+    "startCommit": "facbad1dd1da71f5ceafe7583c38c2acf3d79881",
+    "endCommit": "b5e4d953738ad8c804f297653369ba2b458d126e"
+  },
+  {
+    "name": "cpython",
+    "url": "https://github.com/python/cpython",
+    "withThreads": true,
+    "startCommit": "3d407dc564bd92b46ed00380213f545e515d6ddf",
+    "endCommit": "e723086bc33c19c6c52046d515eb3c2aab1b8f97"
+  },
+  {
+    "name": "dia",
+    "url": "https://github.com/GNOME/dia",
+    "withThreads": true,
+    "startCommit": "d28d6443d072a9dfa76e381e46bf0b2e8f3415fa",
+    "endCommit": "7025cf0f1c9c1e208ed9d7588ff9609892195714"
+  },
+  {
+    "name": "emacs",
+    "url": "https://github.com/emacs-mirror/emacs",
+    "withThreads": true,
+    "startCommit": "0bf85f46815d5adf7524843d53aa47172045c714",
+    "endCommit": "74a71c41e03f28a6380a0537babfdd6c1edb929a"
+  },
+  {
+    "name": "freebsd",
+    "url": "https://github.com/freebsd/freebsd-src",
+    "withThreads": true,
+    "startCommit": "e2abaaaa2bc99178226798467d9f5e1ad967ce47",
+    "endCommit": "1d21fe9cea3f530b4cfca495632d5a1595a32270"
   }
 ]
