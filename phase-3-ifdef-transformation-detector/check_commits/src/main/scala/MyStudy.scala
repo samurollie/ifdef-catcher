@@ -6,12 +6,14 @@ import com.fasterxml.jackson.core.`type`.TypeReference
 import com.fasterxml.jackson.databind.json.JsonMapper
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import org.apache.commons.io.FileUtils
-import org.repodriller.filter.range.Commits
+import org.repodriller.filter.commit.{OnlyModificationsWithFileTypes, OnlyNoMerge}
+import org.repodriller.filter.range.{CommitRange, Commits}
 import org.repodriller.persistence.csv.CSVFile
 import org.repodriller.scm.GitRemoteRepository
 import org.repodriller.{RepositoryMining, Study}
 
 import java.io.{File, FileWriter}
+import java.util
 import scala.annotation.tailrec
 import scala.io.Source
 import scala.util.{Try, Using}
@@ -82,7 +84,18 @@ class MyStudy extends Study {
     val scmRepo = GitRemoteRepository.hostedOn(project.url)
       .inTempDir("temp")
       .buildAsSCMRepository()
-    val range = Commits.range(project.startCommit, project.endCommit)
+
+    var range : CommitRange = null
+    if (project.method.equals("tags") && project.startTag != null && project.endTag != null) {
+      range = Commits.betweenTags(project.startTag, project.endTag)
+    } else if (project.method.equals("commits") && project.startCommit != null && project.endCommit != null) {
+      range = Commits.range(project.startCommit, project.endCommit)
+    } else if (project.method.equals("date") && project.since != null) {
+      range = Commits.since(project.since)
+    } else {
+      println("Error to get project " + project.name + " configuration. Exiting...")
+      return
+    }
     val commits = range.get(scmRepo.getScm)
 
     ProjectFilter.totalCommits = commits.size()
@@ -99,6 +112,10 @@ class MyStudy extends Study {
     }
 
     repositoryMining
+      .filters(
+        new OnlyNoMerge(),
+        new OnlyModificationsWithFileTypes(util.Arrays.asList(".c", ".C", ".h", ".H"))
+      )
       .through(range)
       .process(new MyVisitor(), new CSVFile(reportName, true))
       .mine()
