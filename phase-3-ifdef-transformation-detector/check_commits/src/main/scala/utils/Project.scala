@@ -1,8 +1,9 @@
 package ic.ufal.ifdefcatcher
 package utils
 
-import com.fasterxml.jackson.annotation.JsonProperty
+import com.fasterxml.jackson.annotation.{JsonFormat, JsonProperty}
 
+import java.util.Calendar
 import scala.collection.mutable
 import scala.io.Source
 import scala.util.{Try, Using}
@@ -10,9 +11,13 @@ import scala.util.{Try, Using}
 class Project(
                @JsonProperty(required = true) val name: String,
                @JsonProperty(required = true) val url: String,
-               @JsonProperty(required = true) val withThreads: Boolean,
-               @JsonProperty(required = true) val startCommit: String,
-               @JsonProperty(required = true) val endCommit: String
+               val withThreads: Boolean = true,
+               val startCommit: String = null,
+               val endCommit: String = null,
+               @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd") val since: Calendar = null,
+               val startTag: String = null,
+               val endTag: String = null,
+               val method: String = "commits"
              )
 
 object ProjectFilter {
