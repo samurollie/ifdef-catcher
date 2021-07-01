@@ -1,0 +1,5 @@
+url,old_path,new_path,old_loc,new_loc,old_block,new_block,old_disciplined,new_disciplined,old_undisciplined,new_undisciplined,commit_hash,author
+https://github.com/emacs-mirror/emacs,src/atimer.c,src/atimer.c,264,357,7,20,7,17,0,3,768b24eb0e880c0b39e36fd089905cdca572a758,Committer [name=Dmitry Antipov; email=dmantipov@yandex.ru]
+https://github.com/emacs-mirror/emacs,src/atimer.c,src/atimer.c,372,362,21,17,18,16,3,1,5c6476b48a2d00bef6ada92fa210ac7cd1bc9a77,Committer [name=Paul Eggert; email=eggert@cs.ucla.edu]
+https://github.com/emacs-mirror/emacs,src/atimer.c,src/atimer.c,370,381,17,19,16,17,1,2,c4c531bbee86f45a18b2af168f705a3e53aa7327,Committer [name=Eli Zaretskii; email=eliz@gnu.org]
+https://github.com/emacs-mirror/emacs,src/atimer.c,src/atimer.c,383,382,19,19,17,18,2,1,238c7cd730819ddba2dbde3c46ee36136575695b,Committer [name=Paul Eggert; email=eggert@cs.ucla.edu]
