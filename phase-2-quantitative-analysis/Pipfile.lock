@@ -360,7 +360,7 @@
                 "sha256:713a84991dfcca8c0bc260911f1bd54ac25a386a86285713b9555a60f795059b"
             ],
             "index": "pypi",
-            "version": "==3.0.14"
+            "version": "==3.0.17"
         },
         "jupyterlab-pygments": {
             "hashes": [
