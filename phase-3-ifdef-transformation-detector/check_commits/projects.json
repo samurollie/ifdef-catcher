@@ -1,135 +1,51 @@
 [
   {
-    "name": "apache",
-    "url": "https://github.com/apache/httpd",
-    "since": "2008-12-06",
-    "method": "date"
-  },
-  {
-    "name": "cherokee",
-    "url": "https://github.com/cherokee/webserver",
-    "withThreads": false,
-    "since": "2010-12-01",
-    "method": "date"
-  },
-  {
-    "name": "clamav",
-    "url": "https://github.com/Cisco-Talos/clamav-devel",
-    "since": "2008-11-26",
-    "method": "date"
-  },
-  {
-    "name": "cpython",
-    "url": "https://github.com/python/cpython",
-    "since": "2008-12-03",
-    "method": "date"
-  },
-  {
-    "name": "dia",
-    "url": "https://github.com/GNOME/dia",
-    "since": "2007-06-20",
-    "method": "date"
-  },
-  {
-    "name": "emacs",
-    "url": "https://github.com/emacs-mirror/emacs",
-    "since": "2008-09-05",
-    "method": "date"
-  },
-  {
-    "name": "freebsd",
-    "url": "https://github.com/freebsd/freebsd-src",
-    "since": "2008-12-31",
-    "method": "date"
-  },
-  {
-    "name": "gcc",
-    "url": "https://github.com/gcc-mirror/gcc",
-    "since": "2009-10-07",
-    "method": "date"
-  },
-  {
-    "name": "gimp",
-    "url": "https://github.com/GNOME/gimp",
-    "since": "2009-02-14",
-    "method": "date"
-  },
-  {
     "name": "glibc",
     "url": "https://github.com/bminor/glibc",
     "since": "2008-11-13",
-    "method": "date"
+    "method": "date",
+    "withThreads": false
   },
   {
     "name": "gnumeric",
     "url": "https://github.com/GNOME/gnumeric",
     "since": "2009-03-22",
-    "method": "date"
+    "method": "date",
+    "withThreads": false
   },
   {
     "name": "gnuplot",
     "url": "https://github.com/gnuplot/gnuplot",
     "since": "2009-03-30",
-    "method": "date"
-  },
-  {
-    "name": "libxml2",
-    "url": "https://github.com/GNOME/libxml2",
-    "since": "2009-01-18",
-    "method": "date"
+    "method": "date",
+    "withThreads": false
   },
   {
     "name": "lighttpd",
     "url": "https://github.com/lighttpd/lighttpd1.4",
     "since": "2009-03-07",
-    "method": "date"
-  },
-  {
-    "name": "linux",
-    "url": "https://github.com/torvalds/linux",
-    "since": "2008-12-02",
-    "method": "date"
+    "method": "date",
+    "withThreads": false
   },
   {
     "name": "openldap",
     "url": "https://github.com/openldap/openldap",
     "since": "2009-04-05",
-    "method": "date"
-  },
-  {
-    "name": "parrot",
-    "url": "https://github.com/parrot-mirror/parrot",
-    "since": "2009-02-17",
-    "method": "date"
-  },
-  {
-    "name": "php",
-    "url": "https://github.com/php/php-src",
-    "since": "2008-12-07",
-    "method": "date"
-  },
-  {
-    "name": "postgres",
-    "url": "https://github.com/postgres/postgres",
-    "since": "2009-05-14",
-    "method": "date"
-  },
-  {
-    "name": "sqlite",
-    "url": "https://github.com/mackyle/sqlite",
-    "since": "2009-01-15",
-    "method": "date"
+    "method": "date",
+    "withThreads": false
   },
   {
     "name": "tcl",
     "url": "https://github.com/tcltk/tcl",
     "since": "2009-04-15",
-    "method": "date"
+    "method": "date",
+    "withThreads": false
   },
   {
     "name": "xterm",
     "url": "https://github.com/ThomasDickey/xterm-snapshots",
     "since": "2016-08-07",
-    "method": "date"
+    "method": "date",
+    "withThreads": false
   }
 ]
