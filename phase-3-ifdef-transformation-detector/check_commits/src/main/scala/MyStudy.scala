@@ -7,9 +7,10 @@ import com.fasterxml.jackson.databind.json.JsonMapper
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import org.apache.commons.io.FileUtils
 import org.repodriller.filter.commit.{OnlyModificationsWithFileTypes, OnlyNoMerge}
+import org.repodriller.filter.diff.OnlyDiffsWithFileTypes
 import org.repodriller.filter.range.{CommitRange, Commits}
 import org.repodriller.persistence.csv.CSVFile
-import org.repodriller.scm.GitRemoteRepository
+import org.repodriller.scm.{CollectConfiguration, GitRemoteRepository}
 import org.repodriller.{RepositoryMining, Study}
 
 import java.io.{File, FileWriter}
@@ -117,6 +118,11 @@ class MyStudy extends Study {
         new OnlyModificationsWithFileTypes(util.Arrays.asList(".c", ".C", ".h", ".H"))
       )
       .through(range)
+      .collect(
+        new CollectConfiguration()
+          .diffs(new OnlyDiffsWithFileTypes(util.Arrays.asList("C", "c", "H", "h")))
+          .sourceCode()
+      )
       .process(new MyVisitor(), new CSVFile(reportName, true))
       .mine()
 
