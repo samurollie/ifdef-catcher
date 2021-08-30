@@ -6,7 +6,7 @@ import org.repodriller.domain.{Commit, Modification, ModificationType}
 import org.repodriller.persistence.PersistenceMechanism
 import org.repodriller.scm.{CommitVisitor, RepositoryFile, SCMRepository}
 
-import java.io.File
+import java.io.{File, FileWriter}
 import scala.annotation.tailrec
 import scala.jdk.CollectionConverters.CollectionHasAsScala
 
@@ -123,6 +123,14 @@ class MyVisitor extends CommitVisitor {
       synchronized {
         ProjectFilter.countCommits += 1
         println("PROGRESS " + ProjectFilter.countCommits + "/" + ProjectFilter.totalCommits)
+        val out_writer = new FileWriter("count-steps.txt")
+        try {
+          out_writer.write(repo.getOrigin + " " + ProjectFilter.countCommits + "/" + ProjectFilter.totalCommits)
+        } catch {
+          case _:Exception =>
+        } finally {
+          out_writer.close()
+        }
       }
       repo.getScm.reset()
     }

@@ -3,49 +3,42 @@
     "name": "glibc",
     "url": "https://github.com/bminor/glibc",
     "since": "2008-11-13",
-    "method": "date",
-    "withThreads": false
+    "method": "date"
   },
   {
     "name": "gnumeric",
     "url": "https://github.com/GNOME/gnumeric",
     "since": "2009-03-22",
-    "method": "date",
-    "withThreads": false
+    "method": "date"
   },
   {
     "name": "gnuplot",
     "url": "https://github.com/gnuplot/gnuplot",
     "since": "2009-03-30",
-    "method": "date",
-    "withThreads": false
+    "method": "date"
   },
   {
     "name": "lighttpd",
     "url": "https://github.com/lighttpd/lighttpd1.4",
     "since": "2009-03-07",
-    "method": "date",
-    "withThreads": false
+    "method": "date"
   },
   {
     "name": "openldap",
     "url": "https://github.com/openldap/openldap",
     "since": "2009-04-05",
-    "method": "date",
-    "withThreads": false
+    "method": "date"
   },
   {
     "name": "tcl",
     "url": "https://github.com/tcltk/tcl",
     "since": "2009-04-15",
-    "method": "date",
-    "withThreads": false
+    "method": "date"
   },
   {
     "name": "xterm",
     "url": "https://github.com/ThomasDickey/xterm-snapshots",
     "since": "2016-08-07",
-    "method": "date",
-    "withThreads": false
+    "method": "date"
   }
 ]

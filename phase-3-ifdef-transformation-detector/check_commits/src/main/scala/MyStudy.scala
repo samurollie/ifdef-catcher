@@ -109,7 +109,7 @@ class MyStudy extends Study {
       repositoryMining = repositoryMining
       .visitorsAreThreadSafe(true)
       .visitorsChangeRepoState(true)
-      .withThreads()
+      .withThreads(4)
     }
 
     repositoryMining
