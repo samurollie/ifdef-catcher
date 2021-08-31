@@ -118,11 +118,6 @@ class MyStudy extends Study {
         new OnlyModificationsWithFileTypes(util.Arrays.asList(".c", ".C", ".h", ".H"))
       )
       .through(range)
-      .collect(
-        new CollectConfiguration()
-          .diffs(new OnlyDiffsWithFileTypes(util.Arrays.asList("C", "c", "H", "h")))
-          .sourceCode()
-      )
       .process(new MyVisitor(), new CSVFile(reportName, true))
       .mine()
 
