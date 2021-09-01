@@ -1,0 +1,10 @@
+url,old_path,new_path,old_loc,new_loc,old_block,new_block,old_disciplined,new_disciplined,old_undisciplined,new_undisciplined,commit_hash,author
+https://github.com/bminor/glibc,login/utmp_file.c,login/utmp_file.c,344,379,9,12,4,5,5,7,37a6a271bf72e247047f1e4e9cf457e895d57dce,Committer [name=Ulrich Drepper; email=drepper@redhat.com]
+https://github.com/bminor/glibc,nscd/connections.c,nscd/connections.c,1734,1751,44,48,36,39,8,9,f93fc0b75a50d3ba8d4d69313e3c84ac0b62905b,Committer [name=Ulrich Drepper; email=drepper@redhat.com]
+https://github.com/bminor/glibc,nptl/init.c,nptl/init.c,263,263,18,18,14,12,4,6,3c612057ae7e7f4beac2ac793a85389d0116e6e2,Committer [name=Ulrich Drepper; email=drepper@redhat.com]
+https://github.com/bminor/glibc,sysdeps/unix/sysv/linux/dl-osinfo.h,sysdeps/unix/sysv/linux/dl-osinfo.h,36,62,2,5,2,3,0,2,965cb60a21674edb8e20b1a2a41297bcd4622361,Committer [name=Ulrich Drepper; email=drepper@redhat.com]
+https://github.com/bminor/glibc,string/string.h,string/string.h,205,293,24,48,16,19,8,29,d8387c7b7b1c9ae92f924c33ba05790c98464d19,Committer [name=Ulrich Drepper; email=drepper@redhat.com]
+https://github.com/bminor/glibc,wcsmbs/wchar.h,wcsmbs/wchar.h,404,452,36,48,22,25,14,23,d8387c7b7b1c9ae92f924c33ba05790c98464d19,Committer [name=Ulrich Drepper; email=drepper@redhat.com]
+https://github.com/bminor/glibc,string/string.h,string/string.h,293,398,48,55,19,31,29,24,8585cb7454e10346bccc9fb4df3fae51b2efb9b6,Committer [name=Ulrich Drepper; email=drepper@redhat.com]
+https://github.com/bminor/glibc,string/strings.h,string/strings.h,15,63,1,7,1,5,0,2,8585cb7454e10346bccc9fb4df3fae51b2efb9b6,Committer [name=Ulrich Drepper; email=drepper@redhat.com]
+https://github.com/bminor/glibc,sysdeps/unix/opendir.c,sysdeps/unix/opendir.c,148,143,10,9,5,6,5,3,62f63c47ee9d6dcac1f47870e8038f1b1889e0d4,Committer [name=Ulrich Drepper; email=drepper@redhat.com]
