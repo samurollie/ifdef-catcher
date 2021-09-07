@@ -14,6 +14,7 @@ import org.repodriller.scm.{CollectConfiguration, GitRemoteRepository}
 import org.repodriller.{RepositoryMining, Study}
 
 import java.io.{File, FileWriter}
+import java.nio.file.{Files, Paths}
 import java.util
 import scala.annotation.tailrec
 import scala.io.Source
@@ -129,6 +130,8 @@ class MyStudy extends Study {
       ProjectFilter.TURN_ON = ConfigurationFile.getFilterOn
       ProjectFilter.FILEPATH = ConfigurationFile.getFilterPath
     }
+    Files.createDirectory(Paths.get("output"))
+    Files.createDirectory(Paths.get("CPPSTATS"))
     executeNextProject(getProjects)
   }
 }

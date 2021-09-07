@@ -1,0 +1,5 @@
+services:
+  catcher:
+    build: .
+    volumes:
+      - .:/home/execution/
