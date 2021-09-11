@@ -7,14 +7,13 @@ import com.fasterxml.jackson.databind.json.JsonMapper
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import org.apache.commons.io.FileUtils
 import org.repodriller.filter.commit.{OnlyModificationsWithFileTypes, OnlyNoMerge}
-import org.repodriller.filter.diff.OnlyDiffsWithFileTypes
 import org.repodriller.filter.range.{CommitRange, Commits}
 import org.repodriller.persistence.csv.CSVFile
-import org.repodriller.scm.{CollectConfiguration, GitRemoteRepository}
+import org.repodriller.scm.GitRemoteRepository
 import org.repodriller.{RepositoryMining, Study}
 
 import java.io.{File, FileWriter}
-import java.nio.file.{Files, Paths}
+import java.nio.file.Paths
 import java.util
 import scala.annotation.tailrec
 import scala.io.Source
@@ -108,9 +107,9 @@ class MyStudy extends Study {
 
     if (project.withThreads) {
       repositoryMining = repositoryMining
-      .visitorsAreThreadSafe(true)
-      .visitorsChangeRepoState(true)
-      .withThreads(4)
+        .visitorsAreThreadSafe(true)
+        .visitorsChangeRepoState(true)
+        .withThreads(4)
     }
 
     repositoryMining
@@ -130,8 +129,12 @@ class MyStudy extends Study {
       ProjectFilter.TURN_ON = ConfigurationFile.getFilterOn
       ProjectFilter.FILEPATH = ConfigurationFile.getFilterPath
     }
-    Files.createDirectory(Paths.get("output"))
-    Files.createDirectory(Paths.get("CPPSTATS"))
+
+    val outputFile = new File("output")
+    if (!outputFile.exists()) { outputFile.mkdirs() }
+    val cppStatsFile = new File("CPPSTATS")
+    if (!cppStatsFile.exists()) { cppStatsFile.mkdirs() }
+
     executeNextProject(getProjects)
   }
 }

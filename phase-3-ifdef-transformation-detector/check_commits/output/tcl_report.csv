@@ -8,3 +8,8 @@ https://github.com/tcltk/tcl,generic/tclPlatDecls.h,generic/tclPlatDecls.h,69,57
 https://github.com/tcltk/tcl,generic/tclTomMathDecls.h,generic/tclTomMathDecls.h,468,228,64,3,64,1,0,2,e9db3af7891146387c385294511538225293fab1,Committer [name=nijtmans; email=nijtmans]
 https://github.com/tcltk/tcl,win/tclWinPanic.c,win/tclWinPanic.c,39,54,4,10,4,8,0,2,4ddfe70ae216fd2931131fd6a31a975c7219e8c2,Committer [name=jan.nijtmans; email=nijtmans@users.sourceforge.net]
 https://github.com/tcltk/tcl,generic/tclTomMath.h,generic/tclTomMath.h,161,11,16,1,14,1,2,0,d010f7c3480b092d396c73d872da43257192a475,Committer [name=jan.nijtmans; email=nijtmans@users.sourceforge.net]
+https://github.com/tcltk/tcl,libtommath/bn_mp_exptmod.c,libtommath/bn_mp_exptmod.c,64,45,11,1,9,1,2,0,1e29c4f4ad0ec8903b99967d45b6ea0ea76c6111,Committer [name=jan.nijtmans; email=nijtmans@users.sourceforge.net]
+https://github.com/tcltk/tcl,libtommath/bn_mp_mul.c,libtommath/bn_mp_mul.c,58,33,8,1,5,1,3,0,1e29c4f4ad0ec8903b99967d45b6ea0ea76c6111,Committer [name=jan.nijtmans; email=nijtmans@users.sourceforge.net]
+https://github.com/tcltk/tcl,libtommath/bn_mp_sqr.c,libtommath/bn_mp_sqr.c,34,24,6,1,3,1,3,0,1e29c4f4ad0ec8903b99967d45b6ea0ea76c6111,Committer [name=jan.nijtmans; email=nijtmans@users.sourceforge.net]
+https://github.com/tcltk/tcl,generic/tclTomMath.h,generic/tclTomMath.h,161,11,16,1,14,1,2,0,d010f7c3480b092d396c73d872da43257192a475,Committer [name=jan.nijtmans; email=nijtmans@users.sourceforge.net]
+https://github.com/tcltk/tcl,libtommath/bn_s_mp_exptmod_fast.c,libtommath/bn_s_mp_exptmod_fast.c,213,159,13,1,12,1,1,0,1e29c4f4ad0ec8903b99967d45b6ea0ea76c6111,Committer [name=jan.nijtmans; email=nijtmans@users.sourceforge.net]

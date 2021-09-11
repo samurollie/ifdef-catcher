@@ -7,7 +7,7 @@ scalaVersion := "2.13.6"
 idePackagePrefix := Some("ic.ufal.ifdefcatcher")
 
 // https://mvnrepository.com/artifact/org.repodriller/repodriller
-// libraryDependencies += "org.repodriller" % "repodriller" % "2.0.1"
+libraryDependencies += "org.repodriller" % "repodriller" % "2.0.1"
 // https://mvnrepository.com/artifact/commons-io/commons-io
 libraryDependencies += "commons-io" % "commons-io" % "2.9.0"
 // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
