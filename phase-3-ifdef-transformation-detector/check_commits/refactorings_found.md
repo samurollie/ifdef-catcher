@@ -88,3 +88,105 @@ File: lib/diagdkrenderer.c <br>
 May 26, 2008
 
 ![image](https://user-images.githubusercontent.com/5865045/131278200-0a428a2e-c4a0-4870-a780-998e0871953c.png)
+
+
+# gnumeric
+
+Project url: https://github.com/GNOME/gnumeric
+
+### 74b852b96964e7a51f14fb562d4235f5a5c781bc src/wbc-gtk.c
+
+Url: https://github.com/GNOME/gnumeric/commit/74b852b96964e7a51f14fb562d4235f5a5c781bc#diff-006e796e15d931049e16264538d2c9709bb7020414e9998a49add13239ce88d6R2557 <br>
+Commiter: name=Morten Welinder; email=terra@gnome.org<br>
+File: src/wbc-gtk.c<br>
+Sep 18, 2009
+
+Before - Disciplined
+```C
+#ifdef GNM_USE_HILDON
+	go_action_combo_text_set_width (wbcg->zoom,  "100000000%");
+#else
+	go_action_combo_text_set_width (wbcg->zoom,  "10000%");
+#endif
+```
+
+After - Non Disciplined
+```C
+	go_action_combo_text_set_width (wbcg->zoom_haction,
+#ifdef GNM_USE_HILDON
+					"100000000%"
+#else
+					"10000%"
+#endif
+					);
+```
+
+# gnuplot
+
+Project url: https://github.com/gnuplot/gnuplot
+
+### 97083d929b9b7f41ad7ebf8358b4f7235c840ab0 src/readline.c
+
+Url: https://github.com/gnuplot/gnuplot/commit/97083d929b9b7f41ad7ebf8358b4f7235c840ab0#diff-65c509c956bffbcf49dae610fc109982d93c173a2dcd6a75ba56cfafefd5d37dL1167 <br>
+Commiter: name=Bastian Maerkisch; email=bmaerkisch@web.de <br>
+File: src/readline.c <br>
+Feb 12, 2014
+
+Before - Disciplined
+```C
+#ifdef DJGPP
+	c = ch & 0xff;
+#else /* not DJGPP */
+# ifdef OS2
+	c = getc(stdin);
+# else				/* not OS2 */
+	c = getch();		/* Get the extended code. */
+# endif				/* OS2 */
+#endif /* not DJGPP */
+```
+
+After - Non Disciplined
+```C
+#ifdef DJGPP
+	c = ch & 0xff;
+#elif defined(OS2)
+	c = getc(stdin);
+#else /* not OS2, not DJGPP */
+# if defined (USE_MOUSE)
+    if (term && term->waitforinput && interactive)
+	c = term->waitforinput(0);
+    else
+# endif /* not USE_MOUSE */
+	c = getch();		/* Get the extended code. */
+#endif /* not DJGPP, not OS2 */
+```
+
+### 80ef508ee9da9df6ce964a97434ca600e3406f09 src/win/wgraph.c
+
+Url: https://github.com/gnuplot/gnuplot/commit/80ef508ee9da9df6ce964a97434ca600e3406f09#diff-b4c52e02d2a17ca8dc8b8d350854c047bd93bf0d89b78869f7e173b7c3e29c34L1353 <br>
+Committer: name=Bastian Maerkisch; email=bmaerkisch@web.de<br>
+File: src/win/wgraph.c<br>
+May 14, 2011
+
+Before - Disciplined
+```C
+#ifdef HAVE_GDIPLUS
+				if (!lpgw->antialiasing)
+					Polyline(hdc, ppt, polyi);
+				else
+					gdiplusPolyline(hdc, ppt, polyi, &cur_penstruct);
+#else
+				Polyline(hdc, ppt, polyi);
+#endif
+```
+
+After - Non Disciplined
+```C
+#ifdef HAVE_GDIPLUS
+				if (lpgw->antialiasing)
+					gdiplusPolyline(hdc, ppt, polyi, &cur_penstruct);
+				else
+#endif
+					Polyline(hdc, ppt, polyi);
+```
+
