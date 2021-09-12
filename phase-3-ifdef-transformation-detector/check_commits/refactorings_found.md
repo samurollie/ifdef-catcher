@@ -3,13 +3,13 @@ Project list:
 - [x] apache
 - [x] cherokee
 - [x] dia
-- [ ] glibc
-- [ ] gnumeric
-- [ ] gnuplot
-- [ ] lighttpd
-- [ ] openldap
-- [ ] tcl
-- [ ] xterm
+- [x] glibc
+- [x] gnumeric
+- [x] gnuplot
+- [x] lighttpd
+- [x] openldap
+- [x] tcl
+- [x] xterm
 
 
 # apache
