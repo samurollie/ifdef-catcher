@@ -2,9 +2,9 @@
    "apache": {
       "domain": "Web server",
       "previous-url": "https://github.com/apache/httpd/archive/refs/tags/2.2.11.zip",
-      "current-url": "https://github.com/apache/httpd/archive/refs/tags/2.4.46.zip",
+      "current-url": "https://github.com/apache/httpd/archive/refs/tags/2.4.63.zip",
       "previous-version": "2.2.11",
-      "current-version": "2.4.46"
+      "current-version": "2.4.63"
    },
    "berkeley.db": {
       "domain": "Web server",
@@ -24,16 +24,16 @@
    "clamav": {
       "domain": "antivirus program",
       "previous-url": "https://github.com/Cisco-Talos/clamav-devel/archive/refs/tags/clamav-0.94.2.zip",
-      "current-url": "https://github.com/Cisco-Talos/clamav-devel/archive/refs/heads/dev/0.104.zip",
+      "current-url": "https://github.com/Cisco-Talos/clamav/archive/refs/tags/clamav-1.4.2.zip",
       "previous-version": "0.94.2",
-      "current-version": "0.104"
+      "current-version": "1.4.2"
    },
    "cpython": {
       "domain": "program interpreter",
       "previous-url": "https://github.com/python/cpython/archive/refs/tags/v2.6.1.zip",
-      "current-url": "https://github.com/python/cpython/archive/refs/tags/v3.9.3.zip",
+      "current-url": "https://github.com/python/cpython/archive/refs/tags/v3.13.2.zip",
       "previous-version": "2.6.1",
-      "current-version": "3.9.3"
+      "current-version": "3.13.2"
    },
    "dia": {
       "domain": "diagramming software",
@@ -45,23 +45,23 @@
    "emacs": {
       "domain": "text editor",
       "previous-url": "https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-22.3.zip",
-      "current-url": "https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-27.1.91.zip",
+      "current-url": "https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-30.1.zip",
       "previous-version": "22.3",
-      "current-version": "27.1.91"
+      "current-version": "30.1"
    },
    "freebsd": {
       "domain": "operating system",
       "previous-url": "https://github.com/freebsd/freebsd-src/archive/refs/tags/release/7.1.0.zip",
-      "current-url": "https://github.com/freebsd/freebsd-src/archive/refs/tags/release/12.2.0.zip",
+      "current-url": "https://github.com/freebsd/freebsd-src/archive/refs/tags/release/13.5.0.zip",
       "previous-version": "7.1",
-      "current-version": "12.2"
+      "current-version": "13.5.0"
    },
    "gcc": {
       "domain": "compiler framework",
       "previous-url": "https://github.com/gcc-mirror/gcc/archive/refs/tags/releases/gcc-4.3.3.zip",
-      "current-url": "https://github.com/gcc-mirror/gcc/archive/refs/tags/releases/gcc-10.2.0.zip",
+      "current-url": "https://github.com/gcc-mirror/gcc/archive/refs/tags/releases/gcc-14.2.0.zip",
       "previous-version": "4.3.3",
-      "current-version": "10.2.0"
+      "current-version": "14.2.0"
    },
    "ghostscript": {
       "domain": "postscript interpreter",
@@ -75,9 +75,9 @@
    "gimp": {
       "domain": "graphics editor",
       "previous-url": "https://github.com/GNOME/gimp/archive/refs/tags/GIMP_2_6_4.zip",
-      "current-url": "https://github.com/GNOME/gimp/archive/refs/tags/GIMP_2_10_24.zip",
+      "current-url": "https://github.com/GNOME/gimp/archive/refs/tags/GIMP_3_0_2.zip",
       "previous-version": "2.6.4",
-      "current-version": "2.10.24"
+      "current-version": "3.0.2"
    },
    "glibc": {
       "domain": "programming library",
