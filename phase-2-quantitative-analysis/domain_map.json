@@ -82,51 +82,51 @@
    "glibc": {
       "domain": "programming library",
       "previous-url": "https://github.com/bminor/glibc/archive/refs/tags/glibc-2.9.zip",
-      "current-url": "https://github.com/bminor/glibc/archive/refs/tags/glibc-2.33.zip",
+      "current-url": "https://github.com/bminor/glibc/archive/refs/tags/glibc-2.41.9000.zip",
       "previous-version": "2.9",
-      "current-version": "2.33"
+      "current-version": "2.41.9000"
    },
    "gnumeric": {
       "domain": "spreadsheet application",
       "previous-url": "https://github.com/GNOME/gnumeric/archive/refs/tags/GNUMERIC_1_9_5.zip",
-      "current-url": "https://github.com/GNOME/gnumeric/archive/refs/tags/GNUMERIC_1_12_49.zip",
+      "current-url": "https://github.com/GNOME/gnumeric/archive/refs/tags/GNUMERIC_1_12_59.zip",
       "previous-version": "1.9.5",
-      "current-version": "1.12.49"
+      "current-version": "1.12.59"
    },
    "gnuplot": {
       "domain": "plotting tool",
       "previous-url": "https://github.com/gnuplot/gnuplot/archive/refs/tags/4.2.5.zip",
-      "current-url": "https://github.com/gnuplot/gnuplot/archive/refs/tags/5.4.1.zip",
+      "current-url": "https://github.com/gnuplot/gnuplot/archive/refs/tags/5.4.9.zip",
       "previous-version": "4.2.5",
-      "current-version": "5.4.1"
+      "current-version": "5.4.9"
    },
    "irssi": {
       "domain": "IRC client",
       "previous-url": "https://github.com/irssi/irssi/archive/refs/tags/0.8.13.zip",
-      "current-url": "https://github.com/irssi/irssi/archive/refs/tags/1.2.2.zip",
+      "current-url": "https://github.com/irssi/irssi/archive/refs/tags/1.4.5.zip",
       "previous-version": "0.8.13",
-      "current-version": "1.2.2"
+      "current-version": "1.4.5"
    },
    "libxml2": {
       "domain": "XML library",
       "previous-url": "https://github.com/GNOME/libxml2/archive/refs/tags/LIBXML2.7.3.zip",
-      "current-url": "https://github.com/GNOME/libxml2/archive/refs/tags/v2.9.10.zip",
+      "current-url": "https://github.com/GNOME/libxml2/archive/refs/tags/v2.14.0.zip",
       "previous-version": "2.7.3",
-      "current-version": "2.9.10"
+      "current-version": "2.14.0"
    },
    "lighttpd": {
       "domain": "Web server",
       "previous-url": "https://github.com/lighttpd/lighttpd1.4/archive/refs/tags/lighttpd-1.4.22.zip",
-      "current-url": "https://github.com/lighttpd/lighttpd1.4/archive/refs/tags/lighttpd-1.4.59.zip",
+      "current-url": "https://github.com/lighttpd/lighttpd1.4/archive/refs/tags/lighttpd-1.4.78.zip",
       "previous-version": "1.4.22",
-      "current-version": "1.4.59"
+      "current-version": "1.4.78"
    },
    "linux": {
       "domain": "operating system",
       "previous-url": "https://github.com/torvalds/linux/archive/refs/tags/v2.6.28-rc7.zip",
-      "current-url": "https://github.com/torvalds/linux/archive/refs/tags/v5.12-rc5.zip",
+      "current-url": "https://github.com/torvalds/linux/archive/refs/tags/v6.14.zip",
       "previous-version": "2.6.28.7",
-      "current-version": "5.12.5"
+      "current-version": "6.14"
    },
    "lynx": {
       "domain": "Web browser",
@@ -138,9 +138,9 @@
    "openldap": {
       "domain": "LDAP directory service",
       "previous-url": "https://github.com/openldap/openldap/archive/refs/tags/OPENLDAP_REL_ENG_2_4_16.zip",
-      "current-url": "https://github.com/openldap/openldap/archive/refs/tags/OPENLDAP_REL_ENG_2_4_58.zip",
+      "current-url": "https://github.com/openldap/openldap/archive/refs/tags/OPENLDAP_REL_ENG_2_6_9.zip",
       "previous-version": "2.4.16",
-      "current-version": "2.4.58"
+      "current-version": "2.6.9"
    },
    "openvpn": {
       "domain": "seftrity application",
@@ -154,23 +154,23 @@
    "parrot": {
       "domain": "virtual machine",
       "previous-url": "https://github.com/parrot-mirror/parrot/archive/refs/tags/RELEASE_0_9_1.zip",
-      "current-url": "https://github.com/parrot-mirror/parrot/archive/refs/tags/RELEASE_2_9_1.zip",
+      "current-url": "https://github.com/parrot/parrot/archive/refs/tags/RELEASE_8_1_0.zip",
       "previous-version": "0.9.1",
-      "current-version": "2.9.1"
+      "current-version": "8.1.0"
    },
    "php": {
       "domain": "program interpreter",
       "previous-url": "https://github.com/php/php-src/archive/refs/tags/php-5.2.8.zip",
-      "current-url": "https://github.com/php/php-src/archive/refs/tags/php-8.0.4RC1.zip",
+      "current-url": "https://github.com/php/php-src/archive/refs/tags/php-8.4.5.zip",
       "previous-version": "5.2.8",
-      "current-version": "8.0.4.rc1"
+      "current-version": "8.4.5"
    },
    "postgres": {
       "domain": "database system",
       "previous-url": "https://github.com/postgres/postgres/archive/refs/tags/REL8_4_BETA2.zip",
-      "current-url": "https://github.com/postgres/postgres/archive/refs/tags/REL_13_2.zip",
+      "current-url": "https://github.com/postgres/postgres/archive/refs/tags/REL_17_4.zip",
       "previous-version": "8.4.beta2",
-      "current-version": "13.2"
+      "current-version": "17.4"
    },
    "privoxy": {
       "domain": "proxy server",
@@ -189,30 +189,30 @@
    "sqlite": {
       "domain": "database system",
       "previous-url": "https://github.com/mackyle/sqlite/archive/refs/tags/version-3.6.10.zip",
-      "current-url": "https://github.com/mackyle/sqlite/archive/refs/tags/version-3.35.4.zip",
+      "current-url": "https://github.com/mackyle/sqlite/archive/refs/tags/version-3.44.4.zip",
       "previous-version": "3.6.10",
-      "current-version": "3.35.4"
+      "current-version": "3.44.4"
    },
    "subversion": {
       "domain": "revision control system",
       "previous-url": "https://github.com/apache/subversion/archive/refs/tags/1.5.1.zip",
-      "current-url": "https://github.com/apache/subversion/archive/refs/tags/1.14.1.zip",
+      "current-url": "https://github.com/apache/subversion/archive/refs/tags/1.14.5.zip",
       "previous-version": "1.5.1",
-      "current-version": "1.14.1"
+      "current-version": "1.14.5"
    },
    "sylpheed": {
       "domain": "e-mail client",
       "previous-url": "https://github.com/jan0sch/sylpheed/archive/refs/tags/release-2_6_0.zip",
-      "current-url": "https://github.com/jan0sch/sylpheed/archive/refs/tags/release-3_6_0.zip",
+      "current-url": "https://sylpheed.sraoss.jp/sylpheed/v3.7/sylpheed-3.7.0.tar.gz",
       "previous-version": "2.6.0",
-      "current-version": "3.6.0"
+      "current-version": "3.7.0"
    },
    "tcl": {
       "domain": "program interpreter",
       "previous-url": "https://github.com/tcltk/tcl/archive/refs/tags/core-8-5-7.zip",
-      "current-url": "https://github.com/tcltk/tcl/archive/refs/tags/core-8-6-11.zip",
+      "current-url": "https://github.com/tcltk/tcl/archive/refs/tags/core-9-0-1.zip",
       "previous-version": "8.5.7",
-      "current-version": "8.6.11"
+      "current-version": "9.0.1"
    },
    "xfig": {
       "domain": "vector graphics editor",
@@ -235,8 +235,8 @@
    "xterm": {
       "domain": "terminal emulator",
       "previous-url": "https://github.com/ThomasDickey/xterm-snapshots/archive/refs/tags/xterm-243.zip",
-      "current-url": "https://github.com/ThomasDickey/xterm-snapshots/archive/refs/tags/xterm317c.zip",
+      "current-url": "https://github.com/ThomasDickey/xterm-snapshots/archive/refs/tags/xterm-397a.zip",
       "previous-version": "2.4.3",
-      "current-version": "3.1.7c"
+      "current-version": "3.9.7a"
    }
 }
