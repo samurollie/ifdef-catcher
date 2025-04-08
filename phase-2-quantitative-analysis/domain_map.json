@@ -131,9 +131,9 @@
    "lynx": {
       "domain": "Web browser",
       "previous-url": "https://ftp.isc.org/lynx/current/lynx2.8.6rel.5.tar.Z",
-      "current-url": "https://ftp.isc.org/lynx/current/lynx2.8.8dev.8.tar.Z",
+      "current-url": "https://github.com/lynx-family/lynx/archive/refs/tags/3.2.0-rc.1.zip",
       "previous-version": "2.8.6",
-      "current-version": "2.8.8"
+      "current-version": "3.2.0-rc.1"
    },
    "openldap": {
       "domain": "LDAP directory service",
@@ -144,12 +144,10 @@
    },
    "openvpn": {
       "domain": "seftrity application",
-      "previous-url": "https://drive.google.com/uc?id=1vjAxNB8YU1qHZBCIQYyvjY6F-PFVeXd2",
-      "current-url": "https://drive.google.com/uc?id=1BiDB2EFec_1kF2mU3WwSoeUrLF1sIzAA",
-      "google-drive-filename-v0": "openvpn-2.1_rc1.zip",
-      "google-drive-filename-v1": "openvpn-2.5.1.zip",
+      "previous-url": "https://github.com/OpenVPN/openvpn/releases/tag/v2.1_rc1",
+      "current-url": "https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.14.zip",
       "previous-version": "2.1.rc1",
-      "current-version": "2.5.1"
+      "current-version": "2.6.14"
    },
    "parrot": {
       "domain": "virtual machine",
@@ -182,9 +180,9 @@
    "sendmail": {
       "domain": "mail transfer agent",
       "previous-url": "ftp://ftp.athena.pads.ufrj.br/pub/sendmail/sendmail.8.14.2.tar.gz",
-      "current-url": "ftp://ftp.sendmail.org/pub/sendmail/sendmail.8.16.1.tar.gz",
+      "current-url": "https://ftp.sendmail.org/sendmail.8.18.1.tar.gz",
       "previous-version": "8.14.2",
-      "current-version": "8.16.1"
+      "current-version": "8.18.1"
    },
    "sqlite": {
       "domain": "database system",
@@ -216,21 +214,17 @@
    },
    "xfig": {
       "domain": "vector graphics editor",
-      "previous-url": "https://drive.google.com/uc?id=1kVOvv3xcHxWeeAoDuacV3M5HloWui6Ty",
-      "current-url": "https://drive.google.com/uc?id=1wDhkbRFkVQS32mghD9IT5fvBplXsxpPx",
-      "google-drive-filename-v0": "xfig-3.2.5.zip",
-      "google-drive-filename-v1": "xfig-3.2.8a.zip",
+      "previous-url": "https://sourceforge.net/code-snapshots/git/m/mc/mcj/xfig.git/mcj-xfig-a75592a63d7cf112caa39d0fae7855e310b37a3f.zip",
+      "current-url": "https://sourceforge.net/code-snapshots/git/m/mc/mcj/xfig.git/mcj-xfig-156a2a170328ce31784603f38a02343159a9450c.zip",
       "previous-version": "3.2.5",
-      "current-version": "3.2.8a"
+      "current-version": "3.2.9a"
    },
    "xinelib": {
       "domain": "media library",
-      "previous-url": "https://drive.google.com/uc?id=1JbuNi39VJXmJARc56wbzYwJwva_Owd7F",
-      "current-url": "https://drive.google.com/uc?id=1TV6ALNWEju_g7-JnN3yG2Dciv8CaLtTq",
-      "google-drive-filename-v0": "xine.lib-1.1.16.2.zip",
-      "google-drive-filename-v1": "xine.lib-1.1.20.1.zip",
+      "previous-url": "https://sourceforge.net/projects/xine/files/xine-lib/1.1.16/xine-lib-1.1.16.tar.bz2/download",
+      "current-url": "https://sourceforge.net/projects/xine/files/xine-lib/1.2.13/xine-lib-1.2.13.tar.xz/download",
       "previous-version": "1.1.16",
-      "current-version": "1.1.20.1"
+      "current-version": "1.2.13"
    },
    "xterm": {
       "domain": "terminal emulator",
