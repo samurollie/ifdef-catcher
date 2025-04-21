@@ -1,38 +1,37 @@
 {
    "apache": {
       "domain": "Web server",
-      "previous-url": "https://github.com/apache/httpd/archive/refs/tags/2.2.11.zip",
+      "previous-url": "https://github.com/apache/httpd/archive/refs/tags/2.4.0.zip",
       "current-url": "https://github.com/apache/httpd/archive/refs/tags/2.4.63.zip",
-      "previous-version": "2.2.11",
+      "previous-version": "2.4.0",
       "current-version": "2.4.63"
    },
    "berkeley.db": {
       "domain": "Web server",
-      "previous-url": "http://ftpmirror.your.org/pub/misc/Berkeley-DB/db-4.7.25.zip",
-      "current-url": "https://drive.google.com/uc?id=17lUWTZRqDjtpHg8qXE0HCs477MKCCK1q",
-      "google-drive-filename-v1": "berkeley-db-18.1.40.zip",
-      "previous-version": "4.7.25",
-      "current-version": "18.1"
+      "previous-url": "https://ftp2.osuosl.org/pub/blfs/conglomeration/db/db-5.3.21.tar.gz",
+      "current-url": "https://github.com/yasuhirokimura/db18/archive/refs/tags/18.1.40.zip",
+      "previous-version": "5.3.21",
+      "current-version": "18.1.40"
    },
    "cherokee": {
       "domain": "database system",
-      "previous-url": "https://mirror.aarnet.edu.au/pub/cherokee/0.99/0.99.11/cherokee-0.99.11.tar.gz",
+      "previous-url": "https://github.com/cherokee/webserver/archive/refs/tags/v1.0.12.zip",
       "current-url": "https://github.com/cherokee/webserver/archive/refs/tags/v1.2.104.zip",
-      "previous-version": "0.99.11",
+      "previous-version": "1.0.12",
       "current-version": "1.2.104"
    },
    "clamav": {
       "domain": "antivirus program",
-      "previous-url": "https://github.com/Cisco-Talos/clamav-devel/archive/refs/tags/clamav-0.94.2.zip",
+      "previous-url": "https://github.com/Cisco-Talos/clamav/archive/refs/tags/clamav-0.97.4.zip",
       "current-url": "https://github.com/Cisco-Talos/clamav/archive/refs/tags/clamav-1.4.2.zip",
-      "previous-version": "0.94.2",
+      "previous-version": "0.97.4",
       "current-version": "1.4.2"
    },
    "cpython": {
       "domain": "program interpreter",
-      "previous-url": "https://github.com/python/cpython/archive/refs/tags/v2.6.1.zip",
+      "previous-url": "https://github.com/python/cpython/archive/refs/tags/v2.6.8rc1.zip",
       "current-url": "https://github.com/python/cpython/archive/refs/tags/v3.13.2.zip",
-      "previous-version": "2.6.1",
+      "previous-version": "2.6.8rc1",
       "current-version": "3.13.2"
    },
    "dia": {
@@ -44,33 +43,31 @@
    },
    "emacs": {
       "domain": "text editor",
-      "previous-url": "https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-22.3.zip",
+      "previous-url": "https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-23.4.zip",
       "current-url": "https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-30.1.zip",
-      "previous-version": "22.3",
+      "previous-version": "23.4",
       "current-version": "30.1"
    },
    "freebsd": {
       "domain": "operating system",
-      "previous-url": "https://github.com/freebsd/freebsd-src/archive/refs/tags/release/7.1.0.zip",
+      "previous-url": "https://github.com/freebsd/freebsd-src/archive/refs/tags/release/9.0.0.zip",
       "current-url": "https://github.com/freebsd/freebsd-src/archive/refs/tags/release/13.5.0.zip",
-      "previous-version": "7.1",
+      "previous-version": "9.0.0",
       "current-version": "13.5.0"
    },
    "gcc": {
       "domain": "compiler framework",
-      "previous-url": "https://github.com/gcc-mirror/gcc/archive/refs/tags/releases/gcc-4.3.3.zip",
+      "previous-url": "https://github.com/gcc-mirror/gcc/archive/refs/tags/releases/gcc-4.6.3.zip",
       "current-url": "https://github.com/gcc-mirror/gcc/archive/refs/tags/releases/gcc-14.2.0.zip",
-      "previous-version": "4.3.3",
+      "previous-version": "4.6.3",
       "current-version": "14.2.0"
    },
    "ghostscript": {
       "domain": "postscript interpreter",
-      "previous-url": "https://drive.google.com/uc?id=1J1TQce8o_fm_a7ekbs4ZfRHizRQU6MzZ",
-      "current-url": "https://drive.google.com/uc?id=1jOKsKD0T6WCbvAmYtZal0DhvV-OTrvxA",
-      "google-drive-filename-v0": "ghostpdl-ghostscript-8.62.zip",
-      "google-drive-filename-v1": "ghostpdl-ghostscript-9.52.zip",
-      "previous-version": "8.62.0",
-      "current-version": "9.52"
+      "previous-url": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ghostscript/ghostpdl-9.05.tar.bz2",
+      "current-url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/archive/refs/tags/gs10050.zip",
+      "previous-version": "9.05",
+      "current-version": "10.05.0"
    },
    "gimp": {
       "domain": "graphics editor",
