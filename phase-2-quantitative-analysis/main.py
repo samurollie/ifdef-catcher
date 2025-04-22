@@ -76,10 +76,10 @@ def run_preparation():
 
 def count_files_v1():
     total_files_v1 = 0
-    for filename_1 in glob.iglob(VERSION_1_CPPSTATS_DIR + '/**/**', recursive=True):
-        if not filename_1.endswith('.c') and not filename_1.endswith('.h'):
-            continue
-        total_files_v1 += 1
+    for root, dirs, files in os.walk(VERSION_1_CPPSTATS_DIR):
+        for filename in files:
+            if filename.endswith('.c') or filename.endswith('.h'):
+                total_files_v1 += 1
     return total_files_v1
 
 def run_filter():
@@ -87,39 +87,41 @@ def run_filter():
     total_deleted = 0
     total_files_v1 = count_files_v1()
 
-    for filename_0 in glob.iglob(VERSION_0_CPPSTATS_DIR + '/**/**', recursive=True):
-        if not filename_0.endswith('.c') and not filename_0.endswith('.h'):
-            continue
+    for root, dirs, files in os.walk(VERSION_0_CPPSTATS_DIR):
+        for filename in files:
+            if not (filename.endswith('.c') or filename.endswith('.h')):
+                continue
+            
+            filename_0 = os.path.join(root, filename)
+            total_files_v0 += 1
+            
+            inter_0 = [f for f in os.listdir(VERSION_0_CPPSTATS_DIR)][0]
+            inter_1 = [f for f in os.listdir(VERSION_1_CPPSTATS_DIR)][0]
 
-        total_files_v0 += 1
-        
-        inter_0 = [f for f in os.listdir(VERSION_0_CPPSTATS_DIR)][0]
-        inter_1 = [f for f in os.listdir(VERSION_1_CPPSTATS_DIR)][0]
+            filename_1 = filename_0.replace(VERSION_0_FOLDER, VERSION_1_FOLDER, 1)
+            filename_1 = filename_1.replace(inter_0, inter_1, 1)
 
-        filename_1 = filename_0.replace(VERSION_0_FOLDER, VERSION_1_FOLDER, 1)
-        filename_1 = filename_1.replace(inter_0, inter_1, 1)
-
-        if not os.path.isfile(filename_1):
-            continue
-        
-        with open(filename_0, 'r') as f0:
-            with open(filename_1, 'r') as f1:
-                print(filename_0)
-                try:
-                    content_0 = re.sub(r"[\n\t\s]*", "",f0.read())
-                    content_1 = re.sub(r"[\n\t\s]*", "",f1.read())
-                    if content_0 == content_1:
-                        remove_files(filename_0)
-                        remove_files(filename_1)
-                    else:
-                        blocks_0 = get_blocks(filename_0 + '.xml')
-                        blocks_1 = get_blocks(filename_1 + '.xml')
-                        if blocks_0 == blocks_1:
+            if not os.path.isfile(filename_1):
+                continue
+            
+            with open(filename_0, 'r') as f0:
+                with open(filename_1, 'r') as f1:
+                    print(filename_0)
+                    try:
+                        content_0 = re.sub(r"[\n\t\s]*", "",f0.read())
+                        content_1 = re.sub(r"[\n\t\s]*", "",f1.read())
+                        if content_0 == content_1:
                             remove_files(filename_0)
                             remove_files(filename_1)
-                            total_deleted += 1
-                except:
-                    print('error')
+                        else:
+                            blocks_0 = get_blocks(filename_0 + '.xml')
+                            blocks_1 = get_blocks(filename_1 + '.xml')
+                            if blocks_0 == blocks_1:
+                                remove_files(filename_0)
+                                remove_files(filename_1)
+                                total_deleted += 1
+                    except:
+                        print('error')
     
     return total_files_v0, total_files_v1, total_deleted
 
@@ -213,6 +215,10 @@ def fix_csv_content(project_name, version, csv_path):
             columns[0] = project_name + '-' + version
             f_out.write(';'.join(columns))
 
+def ensure_dir(directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
 def run(projects):
     with open(CPPSTATS_INPUT_TXT, 'w') as f:
         f.write(VERSION_0_FOLDER + '\n')
@@ -226,8 +232,8 @@ def run(projects):
         project = projects[project_name]
 
         # create version 0 and version 1 folders
-        Path(VERSION_0_SOURCE_DIR).mkdir(parents=True, exist_ok=True)
-        Path(VERSION_1_SOURCE_DIR).mkdir(parents=True, exist_ok=True)
+        ensure_dir(VERSION_0_SOURCE_DIR)
+        ensure_dir(VERSION_1_SOURCE_DIR)
 
         download(project[VERSION_0_URL_KEY], VERSION_0_SOURCE_DIR, project.get(GOOGLE_DRIVE_FILENAME_V0))
         download(project[VERSION_1_URL_KEY], VERSION_1_SOURCE_DIR, project.get(GOOGLE_DRIVE_FILENAME_V1))
@@ -270,7 +276,7 @@ def get_total_v1_all_projects(projects):
         project_name = projects_stack.pop()
         project = projects[project_name]
 
-        Path(VERSION_1_SOURCE_DIR).mkdir(parents=True, exist_ok=True)
+        ensure_dir(VERSION_1_SOURCE_DIR)
         download(project[VERSION_1_URL_KEY], VERSION_1_SOURCE_DIR, project.get(GOOGLE_DRIVE_FILENAME_V1))
         files_version_1 = [f for f in os.listdir(VERSION_1_SOURCE_DIR) if os.path.isfile(os.path.join(VERSION_1_SOURCE_DIR, f))]
         extract(files_version_1, VERSION_1_SOURCE_DIR)
