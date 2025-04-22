@@ -71,37 +71,37 @@
    },
    "gimp": {
       "domain": "graphics editor",
-      "previous-url": "https://github.com/GNOME/gimp/archive/refs/tags/GIMP_2_6_4.zip",
+      "previous-url": "https://github.com/GNOME/gimp/archive/refs/tags/GIMP_2_6_12.zip",
       "current-url": "https://github.com/GNOME/gimp/archive/refs/tags/GIMP_3_0_2.zip",
-      "previous-version": "2.6.4",
+      "previous-version": "2.6.12",
       "current-version": "3.0.2"
    },
    "glibc": {
       "domain": "programming library",
-      "previous-url": "https://github.com/bminor/glibc/archive/refs/tags/glibc-2.9.zip",
+      "previous-url": "https://github.com/bminor/glibc/archive/refs/tags/glibc-2.16.zip",
       "current-url": "https://github.com/bminor/glibc/archive/refs/tags/glibc-2.41.9000.zip",
-      "previous-version": "2.9",
+      "previous-version": "2.16",
       "current-version": "2.41.9000"
    },
    "gnumeric": {
       "domain": "spreadsheet application",
-      "previous-url": "https://github.com/GNOME/gnumeric/archive/refs/tags/GNUMERIC_1_9_5.zip",
+      "previous-url": "https://github.com/GNOME/gnumeric/archive/refs/tags/GNUMERIC_1_11_2.zip",
       "current-url": "https://github.com/GNOME/gnumeric/archive/refs/tags/GNUMERIC_1_12_59.zip",
-      "previous-version": "1.9.5",
+      "previous-version": "1.11.2",
       "current-version": "1.12.59"
    },
    "gnuplot": {
       "domain": "plotting tool",
-      "previous-url": "https://github.com/gnuplot/gnuplot/archive/refs/tags/4.2.5.zip",
+      "previous-url": "https://github.com/gnuplot/gnuplot/archive/refs/tags/4.6.0.zip",
       "current-url": "https://github.com/gnuplot/gnuplot/archive/refs/tags/5.4.9.zip",
-      "previous-version": "4.2.5",
+      "previous-version": "4.6.0",
       "current-version": "5.4.9"
    },
    "irssi": {
       "domain": "IRC client",
-      "previous-url": "https://github.com/irssi/irssi/archive/refs/tags/0.8.13.zip",
+      "previous-url": "https://github.com/irssi/irssi/archive/refs/tags/0.8.16.zip",
       "current-url": "https://github.com/irssi/irssi/archive/refs/tags/1.4.5.zip",
-      "previous-version": "0.8.13",
+      "previous-version": "0.8.16",
       "current-version": "1.4.5"
    },
    "libxml2": {
