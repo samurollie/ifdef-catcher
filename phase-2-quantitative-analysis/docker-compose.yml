@@ -1,0 +1,16 @@
+services:
+  ifdef-catcher:
+    build: .
+    volumes:
+      - .:/home/app  # Monta todo o diretório atual
+      - ./csv_files:/home/app/csv_files
+      - ./repos:/home/app/repos
+      - ./output:/home/app/output
+    environment:
+      - PYTHONPATH=/home/app
+      - LANG=C.UTF-8
+      - WATCHPACK_POLLING=true
+    stdin_open: true
+    tty: true
+    working_dir: /home/app  # Define o diretório de trabalho
+    command: bash
