@@ -1,0 +1,6 @@
+gdown==3.12.2
+wget==3.2
+jupyterlab
+pandas
+matplotlib
+pathlib

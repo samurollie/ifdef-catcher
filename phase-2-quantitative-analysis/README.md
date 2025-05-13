@@ -1,4 +1,29 @@
-# Quantitative Analysis
+# Como executar o projeto
+
+## Docker
+
+Para executar o docker:
+
+```bash
+docker compose up --build -d
+```
+Isto irá criar um docker com o cppstats instalado e pronto para executar a análise
+
+Abrir terminal do docker:
+
+```bash
+docker compose exec ifdef-catcher bash
+```
+
+Agora, para executar o projeto:
+
+```bash
+python main.py
+```
+
+Todas as alterações no projeto são imediatamente refletidas no docker e vice-versa
+
+<!-- # Quantitative Analysis
 
 ## Requisites
 
@@ -83,4 +108,4 @@ In addition to those above, the following projects have also been removed:
 
 - subversion: low number of pre processor blocks in version 0
 - xinelib: low number of pre processor blocks in both versions
-- irssi: low number of disciplined (absolute) changes from one version to another
+- irssi: low number of disciplined (absolute) changes from one version to another -->
