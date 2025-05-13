@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ifdef-catcher.iml" filepath="$PROJECT_DIR$/.idea/modules/ifdef-catcher.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ifdef-catcher-build.iml" filepath="$PROJECT_DIR$/.idea/modules/ifdef-catcher-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ifdef-catcher.ifdef-catcher-build.iml" filepath="$PROJECT_DIR$/.idea/modules/ifdef-catcher.ifdef-catcher-build.iml" />
     </modules>
   </component>
 </project>
